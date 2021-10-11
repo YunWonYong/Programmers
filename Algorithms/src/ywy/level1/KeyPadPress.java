@@ -1,6 +1,8 @@
 package ywy.level1;
 
 public class KeyPadPress {
+	public KeyPadPress() {}
+	
 	int[][] pad = {
 		{ 1, 2, 3},
 		{ 4, 5, 6},
@@ -8,7 +10,6 @@ public class KeyPadPress {
 		{10, 0, 11}
 	};
 	
-	public KeyPadPress() {}
 	
 	public String solution(final int[] numbers, final String hand) {
 		StringBuffer answer = new StringBuffer();
@@ -23,9 +24,6 @@ public class KeyPadPress {
 		boolean flag = hand.equals("left");
 		do {
 			number = numbers[index];
-			if (index == 5) {
-				System.out.println("break;");
-			}
 			movePos = findTargetPos(number);
 			left = check(leftPos, "left",number);
 			right = check(rightPos, "right",number);
