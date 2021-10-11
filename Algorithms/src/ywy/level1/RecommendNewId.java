@@ -1,6 +1,7 @@
 package ywy.level1;
 
 public class RecommendNewId {
+	public RecommendNewId() {}
     public String solution(String new_id) {
     	String temp = blankText(new_id); 
         if(!temp.equals(new_id)) {
