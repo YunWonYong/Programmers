@@ -17,7 +17,7 @@ public class RecommendNewId {
     	return backDotRemove(str.replaceAll("^[\\.]", ""));
     }
     
-    private String backDotRemove(String str) {
+    private String backDotRemove(Strin  g str) {
     	return str.replaceAll("[\\.]$", "");
     }
     
