@@ -13,7 +13,7 @@ public class RecommendNewId {
         return temp.length() < 3 ? lastCharAppend(temp) : temp.length() > 14 ? textCheck(temp) : temp; 
     }
     
-    private String frontBackDotRemove(Str ing str) {
+    private String frontBackDotRemove(String str) {
     	return backDotRemove(str.replaceAll("^[\\.]", ""));
     }
     
