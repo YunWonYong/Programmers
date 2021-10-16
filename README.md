@@ -1,5 +1,7 @@
 <header>
+  <a href="https://programmers.co.kr/learn/challenges" title="Go programmers">
   <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" />
+  </a>
 </header>
  
 
@@ -14,11 +16,11 @@
         LEVEL1
       </summary>
       <div>
-         <a href="https://github.com/YunWonYong/Programmers/tree/ywy">ywy</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/andy">andy</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia">atraraxia</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/luna">luna</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear">nattybear</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="Go ywy branch">ywy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="Go andy branch">andy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia" title="Go atraraxia branch">atraraxia</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/luna" title="Go luna branch">luna</a>&nbsp;
+        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="Go nattybear branch">nattybear</a>&nbsp;
       </div>
     </details> 
   </li>
@@ -26,11 +28,11 @@
     <h3>
       프로그래밍언어
     </h3>
-    <div>
-      <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/>&nbsp;
-      <img src="https://img.shields.io/badge/JavaScipt-FFFFFF?style=flat-square&logo=JavaScript"/>&nbsp;
-      <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B"/>&nbsp;
-    </div>
+    <section>
+        <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java&logoWidth=50"/>&nbsp;
+        <img src="https://img.shields.io/badge/JavaScipt-FFFFFF?style=flat-square&logo=JavaScript"/>&nbsp;
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoWidth=50"/>&nbsp;
+    </section>
   </li>
   <li>
     <h3>
