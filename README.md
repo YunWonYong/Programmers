@@ -16,11 +16,11 @@
         LEVEL1
       </summary>
       <div>
-         <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="Go ywy branch">ywy</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="Go andy branch">andy</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia" title="Go atraraxia branch">atraraxia</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/luna" title="Go luna branch">luna</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="Go nattybear branch">nattybear</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia" title="atraraxia branch">atraraxia</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/luna" title="luna branch">luna</a>&nbsp;
+        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
       </div>
     </details> 
   </li>
@@ -29,9 +29,15 @@
       프로그래밍언어
     </h3>
     <section>
-        <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java&logoWidth=50"/>&nbsp;
-        <img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript&logoWidth=50"/>&nbsp;
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoWidth=50"/>&nbsp;
+      <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api">
+        <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/>
+      </a>&nbsp;
+      <a href="https://developer.mozilla.org/ko/" title="JS api">
+        <img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/>
+      </a>&nbsp;
+      <a href="https://www.cplusplus.com/reference/" title="C++ api">
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B"/>
+      </a>
     </section>
   </li>
   <li>
