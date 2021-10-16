@@ -18,7 +18,7 @@
       <div>
          <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
          <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
-         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia" title="atraraxia branch">atraraxia</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia" title="ataraxia branch">ataraxia</a>&nbsp;
          <a href="https://github.com/YunWonYong/Programmers/tree/luna" title="luna branch">luna</a>&nbsp;
         <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
       </div>
