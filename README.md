@@ -1,7 +1,7 @@
-
 <header>
   <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" />
 </header>
+ 
 
 
 <ul>
@@ -9,13 +9,18 @@
     <h3>
       참가자
     </h3>
-    <ul>
-      <li>
-        <h4>
-          LEVEL1
-        </h4>
-      </li>
-    </ul>   
+    <details>
+      <summary>
+        LEVEL1
+      </summary>
+      <div>
+         <a href="https://github.com/YunWonYong/Programmers/tree/ywy">ywy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/andy">andy</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/atraraxia">atraraxia</a>&nbsp;
+         <a href="https://github.com/YunWonYong/Programmers/tree/luna">luna</a>&nbsp;
+        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear">nattybear</a>&nbsp;
+      </div>
+    </details> 
   </li>
   <li>
     <h3>
