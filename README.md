@@ -30,7 +30,7 @@
     </h3>
     <section>
         <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java&logoWidth=50"/>&nbsp;
-        <img src="https://img.shields.io/badge/JavaScipt-FFFFFF?style=flat-square&logo=JavaScript"/>&nbsp;
+        <img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript&logoWidth=50"/>&nbsp;
         <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoWidth=50"/>&nbsp;
     </section>
   </li>
