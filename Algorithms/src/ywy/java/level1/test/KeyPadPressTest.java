@@ -1,12 +1,11 @@
-package ywy.level1.test;
+package ywy.java.level1.test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import ywy.level1.KeyPadPress;
+import ywy.java.level1.KeyPadPress;
 
 public class KeyPadPressTest {
 	private String[][] hands;

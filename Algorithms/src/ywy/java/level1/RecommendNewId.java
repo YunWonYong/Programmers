@@ -1,4 +1,4 @@
-package ywy.level1;
+package ywy.java.level1;
 
 public class RecommendNewId {
 	public RecommendNewId() {}
