@@ -69,7 +69,7 @@
              2021-10-16
           </th>
           <td>
-            로또의 최고 순위와 최저 순위
+            <a href="https://github.com/YunWonYong/Programmers/issues/17">로또의 최고 순위와 최저 순위</a>
           </td>
           <td>
             ywy, andy, ataraxia, luna
@@ -83,7 +83,7 @@
         </tr>
         <tr>
            <td>
-             신규 아이디 추천
+             <a href="https://github.com/YunWonYong/Programmers/issues/19">신규 아이디 추천</a>
           </td>
           <td>
             ywy, andy
@@ -94,10 +94,47 @@
           <td>
             ywy, andy
           </td>      
-        </tr>    
+        </tr>   
+        <tr>
+          <th rowspan="3">
+             2021-10-23
+          </th>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/24">숫자 문자열과 영단어</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>  
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/25">키패드 누르기</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>      
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/26">크레인 인형뽑기</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>          
       </tbody>
     </table>
   </li>   
 </ul>
+
 
 
