@@ -1,11 +1,11 @@
-package ywy.level1.test;
+package ywy.java.level1.test;
 
 import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import ywy.level1.LottoRankings;
+import ywy.java.level1.LottoRankings;
 
 public class LottoRankingsTest {
 	private int[][][] testCase;

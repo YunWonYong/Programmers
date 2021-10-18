@@ -1,4 +1,4 @@
-package ywy.level1;
+package ywy.java.level1;
 /**
  * 로또 종이가 망가져 특정 숫자를 볼 수 없다.
  * 이 때 최대 등수와 최소 등수를 구하는 알고리즘 문제이다.<br>

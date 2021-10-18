@@ -1,11 +1,11 @@
-package ywy.level1.test;
+package ywy.java.level1.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import ywy.level1.NumberStrToNumber;
+import ywy.java.level1.NumberStrToNumber;
 
 public class NumberStrToNumberTest {
 	private String[][] testCase;
