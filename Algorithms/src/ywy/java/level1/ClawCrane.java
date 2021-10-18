@@ -8,18 +8,18 @@ public class ClawCrane {
 		int index = 0;
 		int col = -1;
 		int item = 0;
-		int next = 0;
+		int top = 0;
 		
 		do {
 			col = moves[index++];
 			item = boardSearch(board, --col);
 			if (item > 0) {
-				if(next > 0 && item == stack[next - 1]) {
-					stack[--next] = 0;
+				if(top > 0 && item == stack[top - 1]) {
+					stack[--top] = 0;
 					answer += 2;
 					continue;
 				}
-				stack[next++] = item;
+				stack[top++] = item;
 			}
 		} while(index < range);
 		return answer;
