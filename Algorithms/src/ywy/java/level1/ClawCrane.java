@@ -3,30 +3,23 @@ package ywy.java.level1;
 public class ClawCrane {
 	public int solution(final int[][] board, final int[] moves) {
 		int answer = 0;
-		final int[] temp = new int[moves.length];
-		int index = 0;
 		final int range = moves.length;
+		final int[] stack = new int[range];
+		int index = 0;
 		int col = -1;
 		int item = 0;
-		int prev = 0;
 		int next = 0;
-		int prevItem = -1;
 		
 		do {
 			col = moves[index++];
 			item = boardSearch(board, --col);
 			if (item > 0) {
-				temp[next++] = item;
-				if (next > 1) {
-					prev = prev < 0 ? 0 : prev;
-					prevItem = temp[prev++];
-					if (item == prevItem) {
-						temp[--next] = 0;
-						temp[--prev] = 0;
-						next = prev--;
-						answer += 2;
-					}
+				if(next > 0 && item == stack[next - 1]) {
+					stack[--next] = 0;
+					answer += 2;
+					continue;
 				}
+				stack[next++] = item;
 			}
 		} while(index < range);
 		return answer;
