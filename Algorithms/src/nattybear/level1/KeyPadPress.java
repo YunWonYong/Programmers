@@ -122,7 +122,7 @@ class Hands {
       return 'R';
     }
 
-    if (type == "left") {
+    if (type.equals("left")) {
       left = p;
       return 'L';
     }
