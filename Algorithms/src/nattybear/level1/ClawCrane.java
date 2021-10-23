@@ -1,7 +1,9 @@
+package nattybear.level1;
+
 import java.util.ArrayList;
 import java.util.Optional;
 
-class Solution {
+public class ClawCrane {
   public int solution(int[][] board, int[] moves) {
 
     int size = board.length;
