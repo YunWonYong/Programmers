@@ -66,7 +66,7 @@
              2021-10-16
           </th>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/17">로또의 최고 순위와 최저 순위</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/42">로또의 최고 순위와 최저 순위</a>
           </td>
           <td>
             ywy, andy
@@ -80,7 +80,7 @@
         </tr>
         <tr>
            <td>
-             <a href="https://github.com/YunWonYong/Programmers/issues/19">신규 아이디 추천</a>
+             <a href="https://github.com/YunWonYong/Programmers/issues/43">신규 아이디 추천</a>
           </td>
           <td>
             ywy, andy
@@ -97,7 +97,7 @@
              2021-10-23
           </th>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/24">숫자 문자열과 영단어</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/44">숫자 문자열과 영단어</a>
           </td>
           <td>
             ywy, andy
@@ -111,7 +111,7 @@
         </tr>  
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/25">키패드 누르기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/45">키패드 누르기</a>
           </td>
           <td>
             ywy, andy, nattybear
@@ -125,7 +125,7 @@
         </tr>      
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/26">크레인 인형뽑기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/46">크레인 인형뽑기</a>
           </td>
           <td>
             ywy, andy, nattybear
@@ -142,7 +142,7 @@
              2021-10-30
           </th>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/33">없는 숫자 더하기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/47">없는 숫자 더하기</a>
           </td>
           <td>
           </td>
@@ -153,7 +153,7 @@
         </tr>  
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/34">음양 더하기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/48">음양 더하기</a>
           </td>
           <td>
           </td>
@@ -164,7 +164,7 @@
         </tr>      
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/35">내적</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/49">내적</a>
           </td>
           <td>
           </td>
