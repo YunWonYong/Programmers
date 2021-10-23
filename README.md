@@ -1,6 +1,6 @@
 <header>
   <a href="https://programmers.co.kr/learn/challenges" title="Go programmers">
-  <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=220&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=85&descAlign=82" width="100%"/>
   </a>
 </header>
 <br>
