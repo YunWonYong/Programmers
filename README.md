@@ -46,5 +46,13 @@
         <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B"/>
       </a>
     </li>
+    <br>
+    <li>
+      시작일: 2021-10-16
+    </li>
+    <br>
+    <li>
+      목표일: 2022-02-16
+    </li>
   </ul>
 </details> 
