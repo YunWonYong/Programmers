@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" width="100%"/>
   </a>
 </header>
-
+<br>
 <div align="center">
   <a href="https://github.com/YunWonYong/Programmers/milestones">
     <img src="https://img.shields.io/github/milestones/open/YunWonYong/Programmers?style=for-the-badge" alt="open milestones">
@@ -21,19 +21,30 @@
     <img src="https://img.shields.io/github/issues-closed/YunWonYong/Programmers?color=red&style=for-the-badge" alt="closed issues">
   </a>
 </div>
-
-<ul>
-  <li>
-    <details>
-      <summary>
-        level1
-      </summary>
-      <div>
-        
-        <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
-      </div>
-    </details> 
-  </li>
-</ul>
+<hr>
+<details>
+  <summary>
+    <strong>level1</strong>
+  </summary>
+  <ul>
+    <li>
+      참가자: 
+      <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
+      <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
+      <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
+    </li>
+    <br>
+    <li>
+      사용 언어: 
+      <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api">
+        <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/>
+      </a>&nbsp;
+      <a href="https://developer.mozilla.org/ko/" title="JS api">
+        <img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/>
+      </a>&nbsp;
+      <a href="https://www.cplusplus.com/reference/" title="C++ api">
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B"/>
+      </a>
+    </li>
+  </ul>
+</details> 
