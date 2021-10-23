@@ -1,10 +1,10 @@
 <header>
   <a href="https://programmers.co.kr/learn/challenges" title="Go programmers">
-  <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" />
+  <img src="https://capsule-render.vercel.app/api?type=Rounded&color=timeGradient&height=300&section=header&text=Algorithm%20Study&animation=twinkling&fontSize=90&desc=Programmers&fontColor=ffffff&descAlignY=70&descAlign=82" width="100%"/>
   </a>
 </header>
 
-<div align="left">
+<div align="center">
   <a href="https://github.com/YunWonYong/Programmers/milestones">
     <img src="https://img.shields.io/github/milestones/open/YunWonYong/Programmers?style=for-the-badge" alt="open milestones">
   </a>
