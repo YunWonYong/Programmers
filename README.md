@@ -100,10 +100,13 @@
             <a href="https://github.com/YunWonYong/Programmers/issues/24">숫자 문자열과 영단어</a>
           </td>
           <td>
+            ywy, andy
           </td>
           <td>
+            ywy, andy
           </td>
           <td>
+            ywy, andy
           </td>
         </tr>  
         <tr>
@@ -111,10 +114,13 @@
             <a href="https://github.com/YunWonYong/Programmers/issues/25">키패드 누르기</a>
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
         </tr>      
         <tr>
@@ -122,10 +128,13 @@
             <a href="https://github.com/YunWonYong/Programmers/issues/26">크레인 인형뽑기</a>
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
           <td>
+            ywy, andy, nattybear
           </td>
         </tr>          
       </tbody>
