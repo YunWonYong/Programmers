@@ -136,7 +136,43 @@
           <td>
             ywy, andy, nattybear
           </td>
-        </tr>          
+        </tr>     
+        <tr>
+          <th rowspan="3">
+             2021-10-30
+          </th>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/33">없는 숫자 더하기</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>  
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/34">음양 더하기</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>      
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/35">크레인 인형뽑기</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>           
       </tbody>
     </table>
   </li>   
