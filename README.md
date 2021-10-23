@@ -16,10 +16,7 @@
       <div>
         <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
         <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/ataraxia" title="ataraxia branch">ataraxia</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/luna" title="luna branch">luna</a>&nbsp;
         <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
-        <a href="https://github.com/YunWonYong/Programmers/tree/pu134340" title="pu134340 branch">pu134340</a>&nbsp;
       </div>
     </details> 
   </li>
@@ -72,13 +69,13 @@
             <a href="https://github.com/YunWonYong/Programmers/issues/17">로또의 최고 순위와 최저 순위</a>
           </td>
           <td>
-            ywy, andy, ataraxia, luna
+            ywy, andy
           </td>
           <td>
-            ywy, andy, ataraxia, luna
+            ywy, andy
           </td>
           <td>
-            ywy, andy, luna
+            ywy, andy
           </td>
         </tr>
         <tr>
@@ -103,6 +100,51 @@
             <a href="https://github.com/YunWonYong/Programmers/issues/24">숫자 문자열과 영단어</a>
           </td>
           <td>
+            ywy, andy
+          </td>
+          <td>
+            ywy, andy
+          </td>
+          <td>
+            ywy, andy
+          </td>
+        </tr>  
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/25">키패드 누르기</a>
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+        </tr>      
+        <tr>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/26">크레인 인형뽑기</a>
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+          <td>
+            ywy, andy, nattybear
+          </td>
+        </tr>     
+        <tr>
+          <th rowspan="3">
+             2021-10-30
+          </th>
+          <td>
+            <a href="https://github.com/YunWonYong/Programmers/issues/33">없는 숫자 더하기</a>
+          </td>
+          <td>
           </td>
           <td>
           </td>
@@ -111,7 +153,7 @@
         </tr>  
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/25">키패드 누르기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/34">음양 더하기</a>
           </td>
           <td>
           </td>
@@ -122,7 +164,7 @@
         </tr>      
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/26">크레인 인형뽑기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/35">크레인 인형뽑기</a>
           </td>
           <td>
           </td>
@@ -130,7 +172,7 @@
           </td>
           <td>
           </td>
-        </tr>          
+        </tr>           
       </tbody>
     </table>
   </li>   
