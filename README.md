@@ -8,17 +8,19 @@
   <a href="https://github.com/YunWonYong/Programmers/milestones">
     <img src="https://img.shields.io/github/milestones/open/YunWonYong/Programmers?style=for-the-badge" alt="open milestones">
   </a>
-  <a href="https://github.com/YunWonYong/Programmers/pulls?q=is%3Aopen+is%3Apr">
-    <img src="https://img.shields.io/github/issues-pr/YunWonYong/Programmers?color=green&style=for-the-badge" alt="open rp">
-  </a>
-  <a href="https://github.com/YunWonYong/Programmers/pulls?q=is%3Apr+is%3Aclosed">
-    <img src="https://img.shields.io/github/issues-pr-closed/YunWonYong/Programmers?color=red&style=for-the-badge" alt="closed rp">
-  </a>
+  <br>
   <a href="https://github.com/YunWonYong/Programmers/issues?q=is%3Aopen+is%3Aissue">
     <img src="https://img.shields.io/github/issues/YunWonYong/Programmers?color=green&style=for-the-badge" alt="open issues">
   </a>
   <a href="https://github.com/YunWonYong/Programmers/issues?q=is%3Aissue+is%3Aclosed">
     <img src="https://img.shields.io/github/issues-closed/YunWonYong/Programmers?color=red&style=for-the-badge" alt="closed issues">
+  </a>
+  <br>
+  <a href="https://github.com/YunWonYong/Programmers/pulls?q=is%3Aopen+is%3Apr">
+    <img src="https://img.shields.io/github/issues-pr/YunWonYong/Programmers?color=green&style=for-the-badge" alt="open rp">
+  </a>
+  <a href="https://github.com/YunWonYong/Programmers/pulls?q=is%3Apr+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-pr-closed/YunWonYong/Programmers?color=red&style=for-the-badge" alt="closed rp">
   </a>
 </div>
 <hr>
