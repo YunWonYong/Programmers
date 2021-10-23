@@ -164,7 +164,7 @@
         </tr>      
         <tr>
           <td>
-            <a href="https://github.com/YunWonYong/Programmers/issues/35">크레인 인형뽑기</a>
+            <a href="https://github.com/YunWonYong/Programmers/issues/35">내적</a>
           </td>
           <td>
           </td>
