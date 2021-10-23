@@ -1,5 +1,4 @@
 //키패드 누르기
-
 // 좌표 : [ 행,열 ]
 function solution(numbers, hand) {
     const Left = "L";
