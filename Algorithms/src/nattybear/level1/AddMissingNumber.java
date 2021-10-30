@@ -1,6 +1,9 @@
+package nattybear.level1;
+
 import java.util.Arrays;
 
-class Solution {
+class AddMissingNumber {
+
   public int solution(int[] numbers) {
 
     int sum = Arrays.stream(numbers)
