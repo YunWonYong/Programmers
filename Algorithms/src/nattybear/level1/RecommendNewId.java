@@ -1,8 +1,10 @@
+package nattybear.level1;
+
 import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.*;
 
-class Solution {
+public class RecommendNewId {
 
   Function<IntStream, String> streamToString = (stream) -> {
     StringBuilder builder = new StringBuilder();
