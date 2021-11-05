@@ -2,7 +2,7 @@ package nattybear.level1;
 
 import java.util.HashMap;
 
-class SadPlayer {
+class FailedPlayer {
   public String solution(String[] participant, String[] completion) {
 
     HashMap<String, Integer> map = new HashMap<>();
