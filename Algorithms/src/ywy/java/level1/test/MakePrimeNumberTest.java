@@ -38,6 +38,7 @@ public class MakePrimeNumberTest {
 		do {
 			result = makePrimeNumber.solution(nums[index]);
 			assertEquals("success: "+ this.results[index] + ", result: " + result, result, this.results[index]);
+			System.out.println("======================================");
 		} while((++index) < range);
 	}
 

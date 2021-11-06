@@ -62,11 +62,16 @@ class PrimeFactory {
 		int no = 2;
 		long range = num / 2;
 		range--;
+		System.out.print("num( "+ num + " ) is primeNumber Checked loop Count: ");
+		int count = 0;
 		while(no < range) {
-			if ( num % no++ == 0 || num % no == 0) {
+			count++;
+			if ( num % no++ == 0 || num % no++ == 0) {
+				System.out.println(count);
 				return false;
 			}
 		}
+		System.out.println(count);
 		return true;
 	}
 }
