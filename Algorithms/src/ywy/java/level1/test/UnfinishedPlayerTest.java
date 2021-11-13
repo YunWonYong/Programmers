@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import ywy.java.level1.RecommendNewId;
 import ywy.java.level1.UnfinishedPlayer;
 
 public class UnfinishedPlayerTest {

@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ywy.java.level1.InnerProduct;
-import ywy.java.level1.NumberStrToNumber;
 
 public class InnerProductTest {
 	private int[][] testCase;
