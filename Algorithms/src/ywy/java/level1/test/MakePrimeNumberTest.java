@@ -6,8 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ywy.java.level1.MakePrimeNumber;
-import ywy.java.level1.RecommendNewId;
-import ywy.java.level1.UnfinishedPlayer;
 
 public class MakePrimeNumberTest {
 	private int[][] nums;
