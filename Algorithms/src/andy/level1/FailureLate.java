@@ -17,9 +17,7 @@ class Node {
     }
 }
 
-
-class NodeCompare implements Comparator<Node> {
-	
+class NodeCompare implements Comparator<Node> {	
 	public int compare(Node a, Node b) {
 		if(a.fail < b.fail)
 			return 1;
@@ -28,7 +26,6 @@ class NodeCompare implements Comparator<Node> {
 		return 0;
 	}
 }
-
 
 public class FailureLate {
     public int[] solution(int N, int[] stages) {
@@ -43,13 +40,11 @@ public class FailureLate {
             cnt -= arr[i];
         }
         
-        Collections.sort(fail, new NodeCompare());
-        
+        Collections.sort(fail, new NodeCompare());        
         int i=0;
         for(Node d:fail) {
         	answer[i++] = d.no;
-        }
-        
+        }        
         
         return answer;
     }
