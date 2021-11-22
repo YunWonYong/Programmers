@@ -1,10 +1,12 @@
 //프로그래머스 Level 1, 예산
-function solution(numbers) {
-    var answer = [];
-    var set = new Set();
-    for(let i=0;i<numbers.length;i++) {
-        for(let j=i+1;j<numbers.length;j++)
-            set.add(numbers[i]+numbers[j]);
-    }
-    return [...set].sort((a,b)=>{return a-b;});
+function solution(d, budget) {
+    let answer = 0;
+    let sum = 0;   
+    d.sort((a,b)=>{return a-b});
+    d.some( x => {
+        sum += x;
+        if(sum>budget) return true;
+        answer++;
+    });
+    return answer;
 }
