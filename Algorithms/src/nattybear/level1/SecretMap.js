@@ -1,9 +1,10 @@
-function solution(_, xs, ys) {
+function solution(n, xs, ys) {
   const zs = zip(xs, ys);
   return zs
     .map(x => base2(x))
     .map(x => x.map(convert))
-    .map(x => x.reduce((x, y) => x + y));
+    .map(x => x.reduce((x, y) => x + y))
+    .map(x => x.padStart(n, ' '));
 }
 
 function zip(xs, ys) {
