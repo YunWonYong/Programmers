@@ -1,3 +1,5 @@
+package nattybear.level1;
+
 class Solution {
   public String solution(String s) {
     int len = s.length();
