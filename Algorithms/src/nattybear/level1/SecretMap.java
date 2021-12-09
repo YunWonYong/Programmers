@@ -1,3 +1,5 @@
+package nattybear.level1;
+
 import java.util.ArrayList;
 
 class Solution {
