@@ -1,11 +1,11 @@
 function solution(dartResult) {
 
-  const re = /(\d{1,2}[SDT][*#]{0,1})(\d{1,2}[SDT][*#]{0,1})(\d{1,2}[SDT][*#]{0,1})/
-  const match = re.exec(dartResult);
+  const re = /\d{1,2}[SDT][*#]{0,1}/g;
+  const match = dartResult.match(re);
   const chances = [];
 
   // 보너스 적용
-  for (let i = 1; i <=3; i++) {
+  for (let i = 0; i < 3; i++) {
     const chance = new Chance(match[i]);
     chance.apply_bonus();
     chances.push(chance);

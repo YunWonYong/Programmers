@@ -5,16 +5,15 @@ import java.util.regex.*;
 
 class Solution {
   public int solution(String dartResult) {
-    String s = "(\\d{1,2}[SDT][*#]{0,1})(\\d{1,2}[SDT][*#]{0,1})(\\d{1,2}[SDT][*#]{0,1})";
+    String s = "\\d{1,2}[SDT][*#]{0,1}";
     Pattern p = Pattern.compile(s);
     Matcher m = p.matcher(dartResult);
 
-    m.find();
-
     ArrayList<Chance> chances = new ArrayList<>();
 
-    for (int i = 1; i <= 3; i++) {
-      Chance chance = new Chance(m.group(i));
+    for (int i = 0; i < 3; i++) {
+      m.find();
+      Chance chance = new Chance(m.group());
       chance.applyBonus();
       chances.add(chance);
     }
