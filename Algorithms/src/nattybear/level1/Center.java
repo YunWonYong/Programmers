@@ -3,7 +3,7 @@ package nattybear.level1;
 class Solution {
   public String solution(String s) {
     int len = s.length();
-    int i = (int) Math.floor(len / 2);
+    int i = len / 2;
     if (len % 2 == 0)
       return s.substring(i-1, i+1);
     else
