@@ -1,4 +1,4 @@
-package ywy.java.level1.test;
+package ywy.java.level1.test.cases;
 
 import static org.junit.Assert.assertTrue;
 

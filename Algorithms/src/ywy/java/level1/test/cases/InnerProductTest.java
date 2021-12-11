@@ -1,4 +1,4 @@
-package ywy.java.level1.test;
+package ywy.java.level1.test.cases;
 
 import static org.junit.Assert.assertTrue;
 
@@ -26,14 +26,15 @@ public class InnerProductTest {
 	@Test
 	public void test() {
 		int index = 0;
-		int range = testCase.length;
+		int range = answers.length;
+		int index2 = 0;
 		int result = 0;
 		int answer = 0;
 		do {
 			answer = answers[index];
-			result = innerProduct.solution(testCase[index], testCase[index]);
+			result = innerProduct.solution(testCase[index2++], testCase[index2++]);
 			assertTrue(result == answer);
-		} while(index < range);
+		} while(++index < range);
 	}
 
 }

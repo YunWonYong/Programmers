@@ -1,4 +1,4 @@
-package ywy.java.level1.test;
+package ywy.java.level1.test.cases;
 
 import static org.junit.Assert.assertEquals;
 
@@ -36,7 +36,6 @@ public class MakePrimeNumberTest {
 		do {
 			result = makePrimeNumber.solution(nums[index]);
 			assertEquals("success: "+ this.results[index] + ", result: " + result, result, this.results[index]);
-			System.out.println("======================================");
 		} while((++index) < range);
 	}
 

@@ -1,4 +1,4 @@
-package ywy.java.level1.test;
+package ywy.java.level1.test.cases;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import ywy.java.level1.Year2016;
 
-public class year2016Test {
+public class Year2016Test {
 	private int[] months;
 	private int[] dates;
 	private String[] days;
