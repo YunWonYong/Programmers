@@ -24,38 +24,13 @@
   </a>
 </div>
 <hr>
-<details>
-  <summary>
-    <strong>level1</strong>
-  </summary>
-  <ul>
-    <li>
-      참가자: 
-      <a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>&nbsp;
-      <a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>&nbsp;
-      <a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>&nbsp;
-      <a href="https://github.com/YunWonYong/Programmers/tree/suhyun" title="suhyun branch">suhyun[2021-12-12]</a>&nbsp;
-    </li>
-    <br>
-    <li>
-      사용 언어: 
-      <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api">
-        <img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/>
-      </a>&nbsp;
-      <a href="https://developer.mozilla.org/ko/" title="JS api">
-        <img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/>
-      </a>&nbsp;
-      <a href="https://www.cplusplus.com/reference/" title="C++ api">
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B"/>
-      </a>
-    </li>
-    <br>
-    <li>
-      시작일: 2021-10-16
-    </li>
-    <br>
-    <li>
-      목표일: 2022-02-16
-    </li>
-  </ul>
-</details> 
+
+|이미지|브랜치|참여일자|참여레벨|사용언어|      
+|:----:|:----:|:----:|:----|:----|
+|<img src="https://user-images.githubusercontent.com/59129553/144731856-0de13932-cc21-44a6-8f85-e9fb195da2fd.png" width="120px;" alt=""/>|<a href="https://github.com/YunWonYong/Programmers/tree/ywy" title="ywy branch">ywy</a>|2021-10-08||<a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank"><img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/></a><br><a href="https://developer.mozilla.org/ko/" title="JS api" target="_blank"><img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/></a>|
+|<img src="https://user-images.githubusercontent.com/59129553/145685334-df9a2ef1-dc6b-4815-a3af-b1865767882f.png" width="120px;" alt=""/>|<a href="https://github.com/YunWonYong/Programmers/tree/andy" title="andy branch">andy</a>|2021-10-08||<a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank"><img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/></a><br><a href="https://developer.mozilla.org/ko/" title="JS api" target="_blank"><img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/></a>|
+|<img src="https://user-images.githubusercontent.com/59129553/145685292-3c7a9b1e-3b4d-43dd-ae8d-7a3c87b843cf.png" width="120px;" alt=""/>|<a href="https://github.com/YunWonYong/Programmers/tree/nattybear" title="nattybear branch">nattybear</a>|2021-10-16||<a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank"><img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/></a><br><a href="https://developer.mozilla.org/ko/" title="JS api" target="_blank"><img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/></a>|
+|<img src="https://user-images.githubusercontent.com/59129553/145685375-c07604d2-378b-476f-9711-5760117b608f.png" width="120px;" alt=""/>|<a href="https://github.com/YunWonYong/Programmers/tree/suhyun" title="suhyun branch">suhyun</a>|2021-12-12||<a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank"><img src="https://img.shields.io/badge/Java-5000B9?style=flat-square&logo=Java"/></a><br><a href="https://developer.mozilla.org/ko/" title="JS api" target="_blank"><img src="https://img.shields.io/badge/JS-000000?style=flat-square&logo=JavaScript"/></a>|
+
+
+    
