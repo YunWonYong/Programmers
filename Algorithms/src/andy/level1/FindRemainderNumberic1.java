@@ -1,4 +1,4 @@
-package FindRemainderNumeric1;
+package andy.level1;
 
 //프로그래머스 Level 1,나머지가 1이 되는 수 찾기
 public class FindRemainderNumberic1 {
