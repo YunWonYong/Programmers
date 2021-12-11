@@ -5,58 +5,58 @@ import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 
 public class GymSuit {
-  public static void main(String[] args) {
-    Solution s = new Solution();
+	private static class Solution {
+		public int solution(int n, int[] losts, int[] reserves) {
+			Arrays.sort(losts);
+			Arrays.sort(reserves);
 
-    int[] losts = {2, 4};
-    int[] reserves = {1, 3, 5};
+			Helper helper = new Helper(losts, reserves);
 
-    System.out.println(s.solution(5, losts, reserves));
-  }
-}
+			helper.help((x, y) -> x == y);
+			helper.help((x, y) -> Math.abs(x - y) == 1);
 
-class Solution {
-  public int solution(int n, int[] losts, int[] reserves) {
-    Arrays.sort(losts);
-    Arrays.sort(reserves);
+			IntStream stream = Arrays.stream(helper.getLosts());
 
-    Helper helper = new Helper(losts, reserves);
+			int numberOfLostStudent = (int) stream.filter(x -> x != -1).count();
 
-    helper.help((x, y) -> x == y);
-    helper.help((x, y) -> Math.abs(x - y) == 1);
+			return n - numberOfLostStudent;
+		}
+	}
 
-    IntStream stream = Arrays.stream(helper.getLosts());
+	private static class Helper {
+		private int[] losts;
+		private int[] reserves;
 
-    int numberOfLostStudent = (int) stream.filter(x -> x != -1).count();
+		public Helper(int[] losts, int[] reserves) {
+			this.losts = losts;
+			this.reserves = reserves;
+		}
 
-    return n - numberOfLostStudent;
-  }
-}
+		public void help(BiFunction<Integer, Integer, Boolean> predicate) {
+			for (int i = 0; i < losts.length; i++) {
+				for (int j = 0; j < reserves.length; j++) {
+					int lost = losts[i];
+					int reserve = reserves[j];
+					if (predicate.apply(lost, reserve)) {
+						losts[i] = -1;
+						reserves[j] = -1;
+						break;
+					}
+				}
+			}
+		}
 
-class Helper {
-  private int[] losts;
-  private int[] reserves;
+		public int[] getLosts() {
+			return losts;
+		}
+	}
 
-  public Helper(int[] losts, int[] reserves) {
-    this.losts = losts;
-    this.reserves = reserves;
-  }
+	public static void main(String[] args) {
+		Solution s = new Solution();
 
-  public void help(BiFunction<Integer, Integer, Boolean> predicate) {
-    for (int i = 0; i < losts.length; i++) {
-      for (int j = 0; j < reserves.length; j++) {
-        int lost = losts[i];
-        int reserve = reserves[j];
-        if (predicate.apply(lost, reserve)) {
-          losts[i] = -1;
-          reserves[j] = -1;
-          break;
-        }
-      }
-    }
-  }
+		int[] losts = { 2, 4 };
+		int[] reserves = { 1, 3, 5 };
 
-  public int[] getLosts() {
-    return losts;
-  }
+		System.out.println(s.solution(5, losts, reserves));
+	}
 }
