@@ -1,6 +1,5 @@
 package andy.level1;
 
-import java.util.ArrayList;
 
 //프로그래머스 Level 1,모의고사
 public class MockTest {

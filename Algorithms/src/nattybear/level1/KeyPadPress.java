@@ -42,7 +42,8 @@ class KeyPadPress {
   }
 
   class Key {
-    private int name;
+    @SuppressWarnings("unused")
+	private int name;
     private Point point;
 
     public Key(int n, Point p) {
