@@ -1,5 +1,5 @@
-class Solution {
-    public long solution(int a, int b) {
+class hap_111 {
+    public long hap_111(int a, int b) {
         long answer = 0;
         
         int num1 = a;
