@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Solution {
-    public int[] solution(int []arr) {
+public class continuousNumber_109 {
+    public int[] continuousNumber_109(int []arr) {
         int[] answer = {};
         
         int count = 0;
