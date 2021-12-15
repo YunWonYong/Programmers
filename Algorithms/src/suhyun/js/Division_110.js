@@ -1,4 +1,4 @@
-function division_110(arr, divisor) {
+function Division_110(arr, divisor) {
     let count =0;
     var answer = [];
     for (let i = 0; i < arr.length; i++){
