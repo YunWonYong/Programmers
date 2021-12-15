@@ -27,14 +27,15 @@ class Division_110 {
             }
 
         }
-        // 오름차순 정열 
-        Arrays.sort(answer);
+       
         // 나눠지는 게 없으면 -1 넣기 
         if (flag) {
             answer = new int[1];
             answer[0] = -1;
         }
-        
+        // 위치 변경 
+        // 오름차순 정열 
+        Arrays.sort(answer);
         
         
         return answer;
