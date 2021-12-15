@@ -1,5 +1,5 @@
 // 정확성은 통과했으나 효율성 테스트에서 실패 
-function continuousNumber_109(arr)
+function ContinuousNumber_109(arr)
 {
     var answer = [];
     let count = 0;
