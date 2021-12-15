@@ -1,6 +1,6 @@
 import java.util.Arrays;
-class division_110 {
-    public int[] division_110(int[] arr, int divisor) {
+class Division_110 {
+    public int[] Dvision_110(int[] arr, int divisor) {
                 
         int[] answer = {};
         int count = 0; // 나누어진 수 만큼 answer 초기화
