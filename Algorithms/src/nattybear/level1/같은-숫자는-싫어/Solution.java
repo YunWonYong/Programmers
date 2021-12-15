@@ -1,5 +1,3 @@
-package nattybear.level1;
-
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Optional;
@@ -28,18 +26,5 @@ class Solution {
       return Optional.empty();
     else
       return Optional.of(xs.get(xs.size() - 1));
-  }
-}
-
-public class Unique {
-  public static void main(String[] args) {
-    Solution s = new Solution();
-    System.out.println(
-      Arrays.toString(
-        s.solution(new int[] {1, 1, 3, 3, 0, 1, 1})));
-
-    System.out.println(
-      Arrays.toString(
-        s.solution(new int[] {4, 4, 4, 3, 3})));
   }
 }
