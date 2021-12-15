@@ -1,5 +1,5 @@
-class hap_111 {
-    public long hap_111(int a, int b) {
+class Hap_111 {
+    public long Hap_111(int a, int b) {
         long answer = 0;
         
         int num1 = a;
