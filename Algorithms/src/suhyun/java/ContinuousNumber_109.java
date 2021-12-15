@@ -1,11 +1,12 @@
 import java.util.*;
 
-public class continuousNumber_109 {
-    public int[] continuousNumber_109(int []arr) {
+public class ContinuousNumber_109 {
+    public int[] ContinuousNumber_109(int []arr) {
         int[] answer = {};
         
         int count = 0;
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        // 다형성
+        List<Integer> temp = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
             // arr에 있는 원소들을 temp로 옮김
