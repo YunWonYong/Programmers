@@ -29,12 +29,13 @@ class Division_110 {
         }
        
         // 나눠지는 게 없으면 -1 넣기 
+        // 없으면 sort 넣기 전에 return으로 먼저 처리하도록
         if (flag) {
-            answer = new int[1];
-            answer[0] = -1;
+            return new int[]{-1};
         }
         // 위치 변경 
-        // 오름차순 정열 
+        
+        // 오름차순 정렬 
         Arrays.sort(answer);
         
         
