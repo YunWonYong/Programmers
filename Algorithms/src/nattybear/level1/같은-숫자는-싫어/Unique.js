@@ -7,10 +7,7 @@ function solution(xs) {
 }
 
 function last(xs) {
-  if (xs.length == 0)
-    return null;
-  else
-    return xs[xs.length - 1];
+  return xs[xs.length - 1];
 }
 
 console.log(solution([1,1,3,3,0,1,1]));
