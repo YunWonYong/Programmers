@@ -5,3 +5,7 @@
 .classpath
 
 .project
+
+/src/
+
+!/src/level1/
