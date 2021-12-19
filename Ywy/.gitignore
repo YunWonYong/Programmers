@@ -1,5 +1,7 @@
 /bin/
 
+JAVA/.metadata/
+
 JAVA/bin/
 
 JAVA/.settings/
@@ -19,3 +21,4 @@ JavaScript/jest.config.json
 JavaScript/package.json
 
 JavaScript/package-lock.json
+/.metadata/
