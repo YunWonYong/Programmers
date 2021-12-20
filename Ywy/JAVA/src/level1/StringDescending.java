@@ -2,20 +2,7 @@ package level1;
 
 public class StringDescending {
 	public String solution(final String s) {
-		final StringBuffer buffer = new StringBuffer();
-		String[] patterns = new String[] {s.replaceAll("[A-Z]", ""), s.replaceAll("[^A-Z]", "")};
-		String pattern = null;;
-		int index = 0;
-		while(true) {
-			if (index == 2) {
-				return buffer.toString();
-			}
-			pattern = patterns[index++];
-			if (pattern == null || pattern.isEmpty() || pattern.isBlank()) {
-				continue;
-			}
-			buffer.append(atDescSort(pattern));
-		}
+		return new StringBuffer().append(atDescSort(s)).toString();
 	}
 	
 	private char[] atDescSort(final String str) {
