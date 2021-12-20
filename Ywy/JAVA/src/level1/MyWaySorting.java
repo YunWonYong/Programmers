@@ -7,7 +7,7 @@ public class MyWaySorting {
 		int range = strings.length - 1;
 		String str = null;
 		String nextStr = null;
-		while(index < range) {
+		while(index < range) { 
 			str = strings[index++];
 			nextStr = strings[index];
 			if (str == null || nextStr == null) {
