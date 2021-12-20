@@ -14,6 +14,7 @@ import level1.test.cases.SecretMapTest;
 public class DecemberWeekOf1 {
 	@AfterClass
 	public static void clear() {
+		System.out.println((int)'z');
 		System.gc();
 	}
 }
