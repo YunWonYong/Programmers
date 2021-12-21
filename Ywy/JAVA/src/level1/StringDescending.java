@@ -22,14 +22,14 @@ public class StringDescending {
 	
 	private void insert(final char[] arr, int range) {
 		char at = 0_0;
-        boolean swapFlag = false;
+		boolean swapFlag = false;
 		do {
 			at = arr[range]; 
-            swapFlag = false;
+			swapFlag = false;
 			if (at > arr[--range]) {
 				arr[range + 1] = arr[range];
 				arr[range] =  at;
-                swapFlag = true;
+				swapFlag = true;
 			}
 		} while(swapFlag && range > 0);
 	}

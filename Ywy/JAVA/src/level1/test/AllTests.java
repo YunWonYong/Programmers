@@ -12,6 +12,4 @@ import org.junit.runners.Suite.SuiteClasses;
 		DecemberWeekOf1.class, 	DecemberWeekOf2.class,  DecemberWeekOf3.class
 	}
 )
-public class AllTests {
-
-}
+public class AllTests {}
