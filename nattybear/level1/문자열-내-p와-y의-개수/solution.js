@@ -8,8 +8,5 @@ function solution(s) {
     else if (c == 'y')
       y++;
   }
-  if (p == y)
-    return true;
-  else
-    return false;
+  return p == y;
 }
