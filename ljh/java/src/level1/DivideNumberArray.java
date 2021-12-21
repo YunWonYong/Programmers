@@ -1,4 +1,4 @@
-package level1.java;
+package level1;
 
 import java.util.ArrayList;
 import java.util.List;

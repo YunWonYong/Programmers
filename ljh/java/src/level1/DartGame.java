@@ -1,4 +1,4 @@
-package level1.java;
+package level1;
 
 public class DartGame {
 	public int solution(String dartResult) {
