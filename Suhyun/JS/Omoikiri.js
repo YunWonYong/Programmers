@@ -1,3 +1,5 @@
+function solution(strings, n) {
+    
     let answer=[];
     for(let i = 0 ; i<strings.length ; i++)
     {
@@ -10,4 +12,6 @@
         answer[i]=answer[i].substr(1,answer[i].length)
     }
     
-    console.log(answer);
+    
+    return answer;
+}
