@@ -1,3 +1,4 @@
-let s = "Zbcdefg"
-let answer = s.split("").sort().reverse().join("")
-console.log(answer);
+function solution(s) {
+    let answer = s.split("").sort().reverse().join("")
+    return answer;
+}
