@@ -15,7 +15,7 @@ function solution(s){
         }
     
     }
-    if (y_count == p_count || p_count==0 && y_count == 0) {
+    if (y_count == p_count) {
         return true;
     }
     else return false;
