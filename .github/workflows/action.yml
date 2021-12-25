@@ -6,4 +6,5 @@ jobs:
   echo-test:
     runs-on: ubuntu-latest
     steps:
-      - run: node hello.js
+      - uses: actions/checkout@v2
+      - run:  node hello.js < ${{ github.event_path }}
