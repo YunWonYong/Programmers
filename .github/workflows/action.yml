@@ -6,4 +6,4 @@ jobs:
   echo-test:
     runs-on: ubuntu-latest
     steps:
-      - run: cat ${{ github.event_path }}
+      - run: node -v
