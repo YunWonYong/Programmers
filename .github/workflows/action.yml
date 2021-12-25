@@ -1,9 +1,9 @@
-name: learn-github-actions
+name: action
 on:
   pull_request:
     types: [opened]
 jobs:
-  check-bats-version:
+  echo-test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
+      - run: echo ${{ github.event }}
