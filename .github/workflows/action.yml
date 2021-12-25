@@ -6,4 +6,4 @@ jobs:
   echo-test:
     runs-on: ubuntu-latest
     steps:
-      - run: node -v
+      - run: node hello.js
