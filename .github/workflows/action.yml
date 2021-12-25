@@ -1,8 +1,10 @@
 name: action
-on: [push]
+on:
+  pull_request:
+    types: [opened]
 jobs:
   echo-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: node hello.js
+      - run:  node hello.js < ${{ github.event_path }}
