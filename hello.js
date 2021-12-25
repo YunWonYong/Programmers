@@ -3,14 +3,12 @@ const readline = require('readline').createInterface({
   output: process.stdout
 })
 
-const json = ''
+let json = ''
 
 readline.question('', s => {
   json = JSON.parse(s)
   readline.close()
 })
-
-console.log(json);
 
 const https = require('https')
 
@@ -27,7 +25,7 @@ const auth = 'Basic ' + new Buffer(username + ':' + password).toString('base64')
 const options = {
   hostname: 'api.github.com',
   port: 443,
-  path: json['pull_request']['_links']['html'] + '/labels',
+  path: json['pull_request']['_links']['html']['href'] + '/labels',
   method: 'POST',
   headers: {
     'Accept': 'application/vnd.github.v3+json',
