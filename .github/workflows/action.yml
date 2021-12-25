@@ -1,7 +1,5 @@
 name: action
-on:
-  pull_request:
-    types: [opened]
+on: [push]
 jobs:
   echo-test:
     runs-on: ubuntu-latest
