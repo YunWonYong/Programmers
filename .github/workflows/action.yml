@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run:  node echo.py < ${{ github.event_path }}
+      - run:  python3 echo.py < ${{ github.event_path }}
