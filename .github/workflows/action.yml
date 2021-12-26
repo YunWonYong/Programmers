@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run:  pwd
-      - run:  python3 label.py ${{ github.event_path }}
+      - run:  cd /tmp && python3 label.py ${{ github.event_path }}
 
