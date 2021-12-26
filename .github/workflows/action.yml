@@ -9,3 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - run:  pwd
       - run:  python3 label.py ${{ github.event_path }}
+
