@@ -10,9 +10,9 @@ d = json.loads(b)
 url = d['pull_request']['_links']['issue']['href'] + '/labels'
 
 username = 'vpark45@gmail.com'
-password = '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'
+password = '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'
 auth = 'Basic ' + base64.b64encode((username + ':' + password).encode()).decode()
-url = 'https://api.github.com/repos/nattybear/Programmers/issues/23/labels'
+# url = 'https://api.github.com/repos/nattybear/Programmers/issues/23/labels'
 data = json.dumps({'labels' : ['test']}).encode()
 
 req = urllib.request.Request(url, data)
