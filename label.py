@@ -22,5 +22,10 @@ req.add_header('Authorization', auth)
 req.add_header('Content-Length', len(data))
 req.add_header('User-Agent', 'vpark45@gmail.com')
 
-with urllib.request.urlopen(req, data) as f:
+try:
+  f = urllib.request.urlopen(req, data)
   print(f.read().decode())
+except urllib.error.HTTPError as e:
+  print(e.reason)
+
+f.close()
