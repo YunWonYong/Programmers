@@ -1,10 +1,10 @@
-name: action
+name: auto label 
 on:
   pull_request:
     types: [opened]
 jobs:
-  echo-test:
+  label-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run:  python3 hello.py ${{ github.event_path }}
+      - run:  python3 label.py ${{ github.event_path }}
