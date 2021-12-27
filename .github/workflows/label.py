@@ -2,6 +2,7 @@ import configparser
 import json
 import subprocess
 import sys
+import urllib.parse
 
 def addLabel(name):
   postData = makePostData(name)
@@ -38,7 +39,7 @@ def makePostData(name):
   return json.dumps({'labels' : [name]})
 
 def removeLabel(name):
-  cmd = makeCmd('DELETE', url + '/' + name)  
+  cmd = makeCmd('DELETE', url + '/' + urllib.parse.quote(name))
   subprocess.run(cmd)
 
 jsonData = getJson()
