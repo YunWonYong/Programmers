@@ -1,3 +1,4 @@
 import label
 
-print(label.jsonData['sender'])
+sender = 'branch ' + label.jsonData['sender']['login']
+label.removeLabel(sender)
