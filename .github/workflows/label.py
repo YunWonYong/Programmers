@@ -4,10 +4,6 @@ import json
 import subprocess
 import sys
 
-addLabel = functools.partial(someLabel, 'POST')
-
-removeLabel = functools.partial(someLabel, 'DELETE')
-
 def someLabel(method, jsonData, labelName):
   config = configparser.ConfigParser()
   config.read('.label.ini')
@@ -29,3 +25,7 @@ def getJson():
   with open(sys.argv[1]) as f:
     b = f.read()
   return json.loads(b)
+
+addLabel = functools.partial(someLabel, 'POST')
+
+removeLabel = functools.partial(someLabel, 'DELETE')
