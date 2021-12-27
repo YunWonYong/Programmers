@@ -1,0 +1,9 @@
+name: add-reviewer
+on:
+  pull_request:
+    types: [review_requested]
+jobs:
+  add-reviewer:
+    runs-on: self-hosted
+    steps:
+      - run: cat ${{ github.event_path }}
