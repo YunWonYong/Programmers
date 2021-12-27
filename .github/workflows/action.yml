@@ -1,10 +1,11 @@
 name: label 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, review_requested]
 jobs:
   label-test:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
+      - run:  cat ${{ github.event_path }}
       - run:  cd /home/vincent/label && python3 label.py ${{ github.event_path }}
