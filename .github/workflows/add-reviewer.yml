@@ -1,0 +1,9 @@
+name: add-reviewer
+on:
+  pull_request:
+    types: [review_requested]
+jobs:
+  add-reviewer:
+    runs-on: self-hosted
+    steps:
+      - run: cd /home/vincent/programmers/.github/workflows/ && python3 add-reviewer.py ${{ github.event_path }}
