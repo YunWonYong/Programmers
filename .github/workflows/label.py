@@ -1,8 +1,7 @@
-import base64
 import configparser
 import json
+import subprocess
 import sys
-import urllib.request
 
 def getJson():
   with open(sys.argv[1]) as f:
@@ -15,12 +14,13 @@ def addLabels(jsonData, labelName):
   default = config['DEFAULT']
   username = default['username']
   password = default['password']
-  auth = 'Basic ' + base64.b64encode((username + ':' + password).encode()).decode()
-  data = json.dumps({'labels' : [labelName]}).encode()
   url = jsonData['pull_request']['_links']['issue']['href'] + '/labels'
-  req = urllib.request.Request(url, data)
-  req.add_header('Accept', 'application/vnd.github.v3+json')
-  req.add_header('Authorization', auth)
-  with urllib.request.urlopen(req) as f:
-    b = f.read()
-  print(b)
+  cmd = [
+    'curl',
+    '-X', 'POST',
+    '-H', "'Accept: application/vnd.github.v3+json'",
+    '-u', username + ':' + password,
+    '-d', '"' + json.dumps({'labels' : [labelName]}) + '"',
+    url
+  ]
+  subprocess.run(cmd)
