@@ -1,4 +1,3 @@
 import label
 
-jsonData = label.getJson()
-label.addLabel(jsonData, 'approve')
+label.addLabel('approve')
