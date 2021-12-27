@@ -2,4 +2,4 @@ import label
 
 jsonData = label.getJson()
 reviewer = 'branch ' + jsonData['requested_reviewer']['login']
-label.addLabel(jsonData, reviewer)
+label.removeLabel(jsonData, reviewer)

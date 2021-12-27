@@ -1,14 +1,14 @@
 import configparser
+import functools
 import json
 import subprocess
 import sys
 
-def getJson():
-  with open(sys.argv[1]) as f:
-    b = f.read()
-  return json.loads(b)
+addLabel = functools.partial(someLabel, 'POST')
 
-def addLabels(jsonData, labelName):
+removeLabel = functools.partial(someLabel, 'DELETE')
+
+def someLabel(method, jsonData, labelName):
   config = configparser.ConfigParser()
   config.read('.label.ini')
   default = config['DEFAULT']
@@ -17,10 +17,15 @@ def addLabels(jsonData, labelName):
   url = jsonData['pull_request']['_links']['issue']['href'] + '/labels'
   cmd = [
     'curl',
-    '-X', 'POST',
-    '-H', "'Accept: application/vnd.github.v3+json'",
+    '-X', method,
+    '-H', 'Accept: application/vnd.github.v3+json',
     '-u', username + ':' + password,
-    '-d', '"' + json.dumps({'labels' : [labelName]}) + '"',
+    '-d', json.dumps({'labels' : [labelName]}),
     url
   ]
   subprocess.run(cmd)
+
+def getJson():
+  with open(sys.argv[1]) as f:
+    b = f.read()
+  return json.loads(b)
