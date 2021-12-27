@@ -1,0 +1,10 @@
+name: remove-reviewer
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  remove-reviewer:
+    runs-on: self-hosted
+    steps:
+      - run: cat ${{ github.event_path }}
+      - run: cd /home/vincent/programmers/.github/workflows/script && python3 remove-submitter.py ${{ github.event_path }}
