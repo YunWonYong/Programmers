@@ -5,7 +5,7 @@ import sys
 import urllib.request
 
 def getJson():
-  with open(argv[1]) as f:
+  with open(sys.argv[1]) as f:
     b = f.read()
   return json.loads(b)
 
