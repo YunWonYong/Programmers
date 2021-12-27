@@ -32,6 +32,7 @@ def makeCmd(method, url, postData=None):
     cmd.append('-d')
     cmd.append(postData)
   cmd.append(url)
+  return cmd
 
 def makePostData(name):
   return json.dumps({'labels' : [name]})
