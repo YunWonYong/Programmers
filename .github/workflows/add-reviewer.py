@@ -1,9 +1,5 @@
-import json
-import sys
+import label
 
-filename = sys.argv[1]
-with open(filename) as f:
-  b = f.read()
-d = json.loads(b)
-rs = d['requested_reviewers']
-print(rs)
+jsonData = label.getJson()
+reviewer = jsonData['requested_reviewer']['login']
+label.addLabels(jsonData, [reviewer])
