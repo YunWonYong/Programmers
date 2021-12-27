@@ -6,4 +6,4 @@ jobs:
   remove-reviewer:
     runs-on: self-hosted
     steps:
-      - run: cd /home/vincent/programmers/.github/workflows && python3 remove-reviewer.py ${{ github.event_path }}
+      - run: cd /home/vincent/programmers/.github/workflows/script && python3 remove-reviewer.py ${{ github.event_path }}
