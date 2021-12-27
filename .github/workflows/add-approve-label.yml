@@ -6,5 +6,4 @@ jobs:
   add-approve-label:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v2
       - run:  cd /home/vincent/label && python3 add-approve-label.py ${{ github.event_path }}
