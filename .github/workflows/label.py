@@ -9,14 +9,14 @@ def getJson():
     b = f.read()
   return json.loads(b)
 
-def addLabels(jsonData, labelNames):
+def addLabels(jsonData, labelName):
   config = configparser.ConfigParser()
   config.read('.label.ini')
   default = config['DEFAULT']
   username = default['username']
   password = default['password']
   auth = 'Basic ' + base64.b64encode((username + ':' + password).encode()).decode()
-  data = json.dumps({'labels' : labelNames}).encode()
+  data = json.dumps({'labels' : [labelName]}).encode()
   url = jsonData['pull_request']['_links']['issue']['href'] + '/labels'
   req = urllib.request.Request(url, data)
   req.add_header('Accept', 'application/vnd.github.v3+json')
