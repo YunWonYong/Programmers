@@ -1,12 +1,10 @@
-name: label 
+name: add-approve-label
 on:
   pull_request:
-    types: [opened, review_requested]
+    types: [opened]
 jobs:
-  label-test:
+  add-approve-label:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - run:  cat ${{ github.event_path }}
       - run:  cd /home/vincent/label && python3 label.py ${{ github.event_path }}
-
