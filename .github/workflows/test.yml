@@ -1,9 +1,0 @@
-name: test 
-on:
-  pull_request:
-    types: [auth_merge_enabled]
-jobs:
-  test:
-    runs-on: self-hosted
-    steps:
-      - run: cat ${{ github.event_path }}
