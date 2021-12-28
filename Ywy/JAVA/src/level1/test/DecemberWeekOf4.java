@@ -5,11 +5,10 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 import level1.test.cases.FromSeoulKimGroomFindTest;
-import level1.test.cases.MyWaySortingTest;
 import level1.test.cases.PAndYCountTest;
-import level1.test.cases.StringDescendingTest;
+import level1.test.cases.PrimeNumberFindTest;
 
 @RunWith(Suite.class)
-@SuiteClasses({ PAndYCountTest.class, FromSeoulKimGroomFindTest.class, StringDescendingTest.class })
+@SuiteClasses({ PAndYCountTest.class, FromSeoulKimGroomFindTest.class, PrimeNumberFindTest.class })
 public class DecemberWeekOf4 {
 }

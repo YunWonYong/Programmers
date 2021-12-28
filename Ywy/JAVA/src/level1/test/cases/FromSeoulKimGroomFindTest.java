@@ -16,7 +16,7 @@ public class FromSeoulKimGroomFindTest {
 	private String[][] seouls;
 	private FromSeoulKimGroomFind fromSeoulKimGroomFind;
 	private final List<Integer> LIST = Arrays.asList(1, 18, 16, 33, 27, 115, 149, 143, 234);  
-	private Iterator<Integer> answer;
+	private Iterator<Integer> answer; 
 	@Before
 	public void setUp() {
 		seouls = new String[][] {

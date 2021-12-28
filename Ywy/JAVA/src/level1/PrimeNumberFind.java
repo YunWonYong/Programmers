@@ -1,37 +1,27 @@
 package level1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PrimeNumberFind {
 	public int solution(int n) {
-		if (n < 5) {
-			return 2;
-		} else if (n == 1) {
-			return 0;
-		}
-		final int[] table = { 2, 3, 5, 7 };
-		List<Integer> list = new ArrayList<Integer>();
-		list.add(1);
-		int index = 0;
-		int range = table.length;
-		int num = 0;
-		n++;
-		do {
-			num = table[index];
-			addNumMultiple(list, num, n);
-		} while (++index < range);
-		System.out.println(list.size());
-		return n - list.size();
+		final boolean[] numberTable = new boolean[++n];
+		int index = 2;
+		int count = 2;
+        do{
+           if(numberTable[index] == false){
+               count += marking(numberTable, n, index);
+           }
+        } while (++index < n); 
+        return n - count;
 	}
-
-	private void addNumMultiple(final List<Integer> list, int num, int n) {
-		int temp = num;
-		while (temp < n) {
-			temp += num;
-			if (temp < n && list.indexOf(temp) == -1) {
-				list.add(temp);
-			}
-		}
-	}
+    
+    private int marking(final boolean[] numberTable, final int n, final int no) {
+        int temp = no;
+        int count = 0;
+        while((temp += no) < n) {
+            if(numberTable[temp] == false){
+                count++;
+                numberTable[temp] = true;
+            }
+        }
+        return count;
+    }
 }

@@ -5,7 +5,7 @@ import semantics.Choice;
 public class FromSeoulKimGroomFind {
 	
 	public String solution(final String[] seoul) {
-		int left = 0;
+        int left = 0;
         int right = seoul.length - 1;
         int pos = -1_0_0;
         while(true) {

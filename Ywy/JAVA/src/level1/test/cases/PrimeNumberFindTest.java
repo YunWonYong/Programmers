@@ -14,8 +14,8 @@ public class PrimeNumberFindTest {
 	
 	@Before
 	public void setUp() {
-		ns = new int[] {10, 5};
-		answers = new int[] {4, 3};
+		ns = new int[] {10, 5, 100, 1000, 7919, 10000};
+		answers = new int[] {4, 3, 25, 168, 1000, 1229};
 		primeNumberFind = new PrimeNumberFind();
 	}
 
