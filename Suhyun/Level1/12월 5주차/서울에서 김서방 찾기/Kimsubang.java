@@ -8,7 +8,7 @@ public class Kimsubang {
         {
             
             if(seoul[i].equals("Kim")){
-                answer = "±è¼­¹æÀº "+i+"¿¡ ÀÖ´Ù";
+                answer = "ê¹€ì„œë°©ì€ "+i+"ì— ìˆë‹¤";
                 //System.out.println(answer);
                 break;
             }
