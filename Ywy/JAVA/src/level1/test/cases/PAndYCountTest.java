@@ -17,7 +17,7 @@ public class PAndYCountTest {
 	public void setUp() throws Exception {
 		s = new String[]{
 			"pPoooyY",
-			"Pyy"
+			"Pyy" 
 		};
 		answers = new boolean[]{
 			true,
