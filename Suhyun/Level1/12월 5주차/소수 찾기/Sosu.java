@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Sosu {
     public static void main(String[] args) {
-        int n=10;
+        int n = 10;
         int answer = 0;
 
         int[] arr = new int[n+1];      
@@ -13,7 +13,7 @@ public class Sosu {
             arr[i] = i;  
         }
  
-        for (int i = 2; i <= (int)Math.sqrt(n); i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if(arr[i] == 0) continue; 
             for (int j = i+i ; j <= n; j+=i) {
                   arr[j] = 0; 
@@ -24,55 +24,55 @@ public class Sosu {
             if(arr[i] != 0) answer++;
         }
         
-        System.out.print(answer);
+        System.out.println(answer);
         //return answer;
     }
 }
 
 
 
-//ì‹¤íŒ¨ìž‘ 
-
+// Á¤È®¼º Å×½ºÆ®¿¡¼­ ½Ã°£ ÃÊ°ú
 class Solution {
     public int solution(int n) {
-        int answer =0;
-        int count =0 ;
+        int answer = 0;
+        int count = 0 ;
         
         
-        for(int i=2 ; i<=n ;i++)
+        for(int i = 2 ; i <= n ; i++)
         {   
-            for(int j=2 ; j<=i ; j++){
-                if(i%j==0){
+            for(int j = 2 ; j <= i ; j++){
+                if(i%j == 0){
                     count++;
-                    if(count>=2)break;
+                    if(count >= 2)break;
                 }
             }
-            if(count==1){
+            if(count == 1){
                 answer++;
             }
-            count =0;
+            count = 0;
         }
         //System.out.println(answer);
         return answer;
     }
 }
 
-//íš¨ìœ¨ì„± ì‹¤íŒ¨ 
+
+//È¿À²¼º Å×½ºÆ® ½Ã°£ ÃÊ°ú 
 //import java.util.ArrayList;
 //import java.util.List;
 class Solution2 {
     public int solution(int n) {
-        int answer =0;
+        int answer = 0;
         List<Integer> arr = new ArrayList<>();
         arr.add(2);
 
-        for(int i=2 ; i<=n ;i++)
+        for(int i = 2 ; i <= n ;i++)
         {   
-            for(int j=0 ; j<=arr.size() ; j++){
-                if(i%arr.get(j)==0){
+            for(int j = 0 ; j <= arr.size() ; j++){
+                if(i%arr.get(j) == 0){
                     break;
                 }
-                if(j+1==arr.size()){
+                if(j+1 == arr.size()){
                     arr.add(i);
                 }
             }

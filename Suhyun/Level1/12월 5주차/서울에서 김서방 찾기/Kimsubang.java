@@ -1,14 +1,14 @@
 public class Kimsubang {
     public static void main(String[] args) {
-        String[] seoul =new String[]{"Jane","eeee","jany", "Kim"};
-        String answer ="";
+        String[] seoul = new String[]{"Jane","eeee","jany", "Kim"};
+        String answer = "";
         
 
-        for (int i=0 ; i<seoul.length;i++)
+        for (int i = 0 ; i < seoul.length ; i++)
         {
-            // Stringì´ë¼ì„œ =="Kim"í•˜ë©´ ëª» ì°¾ìŒ 
+            
             if(seoul[i].equals("Kim")){
-                answer="ê¹€ì„œë°©ì€ "+i+"ì— ìžˆë‹¤";
+                answer = "±è¼­¹æÀº "+i+"¿¡ ÀÖ´Ù";
                 //System.out.println(answer);
                 break;
             }

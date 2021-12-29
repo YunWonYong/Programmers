@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Omoikiri {
     public static void main(String[] args) {
-        String[] str = {"sun","bed","car"};
-        
+        String[] strings = {"sun","bed","car"};
+        int n = 2;
         String[] answer = new String[strings.length];
         
 
@@ -16,7 +20,7 @@ public class Omoikiri {
         for (int i=0; i<array.size(); i++) {
             answer[i] = array.get(i).substring(1);
         }
-        System.out.print(answer);
+        System.out.println(Arrays.toString(answer));
         //return answer;
         
     }
