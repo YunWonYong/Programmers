@@ -1,0 +1,67 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch PtoY",
+            "request": "launch",
+            "mainClass": "PtoY",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Omoikiri",
+            "request": "launch",
+            "mainClass": "Omoikiri",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sosu",
+            "request": "launch",
+            "mainClass": "Sosu",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kimsubang",
+            "request": "launch",
+            "mainClass": "Kimsubang",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_Control_Default",
+            "request": "launch",
+            "mainClass": "String_Control_Default",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Naerim",
+            "request": "launch",
+            "mainClass": "Java.Naerim",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Omoikiri",
+            "request": "launch",
+            "mainClass": "Java.Omoikiri",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PtoY",
+            "request": "launch",
+            "mainClass": "Java.PtoY",
+            "projectName": "Suhyun_43e35a6b"
+        }
+    ]
+}

@@ -1,6 +1,7 @@
 public class PtoY {
     public static void main(String[] args) {
         boolean answer =true;
+        String s = "pppPppssssYYSYYY";
         char[] arr = s.toCharArray();
         int y_count = 0;
         int p_count = 0;
