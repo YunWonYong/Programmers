@@ -1,6 +1,6 @@
 function solution(seoul) {
     let answer = '';
     let count = seoul.indexOf("Kim");
-    answer="±è¼­¹æÀº  "+count+"¿¡ ÀÖ´Ù"
+    answer="ê¹€ì„œë°©ì€  "+count+"ì— ìˆë‹¤"
     return answer;
 }
