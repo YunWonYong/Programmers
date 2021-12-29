@@ -9,7 +9,7 @@ public class PrimeNumberFind {
 			if (numberTable[index] == false) {
 				count += marking(numberTable, n, index);
 			}
-		} while(++index < n);
+		} while(++index < Math.sqrt(n));
 		return n - count;
 	}
 	
