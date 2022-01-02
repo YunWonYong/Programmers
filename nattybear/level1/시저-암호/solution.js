@@ -8,11 +8,7 @@ function solution(s, n) {
 function caesar(c, n) {
   if (c == ' ')
     return c
-  let array = []
-  if ('a' <= c && c <= 'z')
-    array = lower
-  else
-    array = upper
+  let array = ('a' <= c && c <= 'z') ? lower : upper
   const index = (array.indexOf(c) + n) % 26
   return array[index]
 }
