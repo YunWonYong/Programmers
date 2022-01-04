@@ -4,13 +4,13 @@ function solution(n) {
     let answer="";
 
     for(let i=0; i<n; i++){
-        answer+= i%2==0 ? '¼ö' : '¹Ú';
+        answer+= i%2==0 ? 'ìˆ˜' : 'ë°•';
     }
 }
 console.log(answer);
 
 //0.05s
 function solution(n) {
-    return '¼ö¹Ú'.repeat(n/2) + (n%2 === 1 ? '¼ö' : '');
+    return 'Â¼Ã¶Â¹Ãš'.repeat(n/2) + (n%2 === 1 ? 'Â¼Ã¶' : '');
    
 }
