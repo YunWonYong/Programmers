@@ -5,17 +5,17 @@ public class Subac {
         
         //6.13
         for(int i=0; i<n; i++){
-            answer+= i%2==0 ? "¼ö" : "¹Ú";
+            answer+= i%2==0 ? "ìˆ˜" : "ë°•";
         }
 
         // 6.84
         // int count=1;
         // for(int i=0; i<n; i++){
         //     if(count%2!=0){
-        //         answer=answer+"¼ö";
+        //         answer=answer+"Â¼Ã¶";
         //     }
         //     else{
-        //         answer=answer+"¹Ú";
+        //         answer=answer+"Â¹Ãš";
         //     }
         //     count++;
         // }
