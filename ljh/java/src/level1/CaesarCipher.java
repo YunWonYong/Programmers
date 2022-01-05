@@ -1,4 +1,4 @@
-package level1.test;
+package level1;
 
 /*
  * 시저암호(211231 - 220107) 

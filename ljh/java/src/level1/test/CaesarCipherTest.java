@@ -1,11 +1,11 @@
-package level1;
+package level1.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import level1.test.CaesarCipher;
+import level1.CaesarCipher;
 
 public class CaesarCipherTest {
 	private String[] s;
