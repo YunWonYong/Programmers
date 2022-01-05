@@ -1,6 +1,22 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+
+        {
+            "type": "java",
+            "name": "Launch Caesar",
+            "request": "launch",
+            "mainClass": "Caesar",
+            "projectName": "Suhyun_43e35a6b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChangeStringtoInteger",
+            "request": "launch",
+            "mainClass": "ChangeStringtoInteger",
+            "projectName": "Suhyun_43e35a6b"
+        },
         {
             "type": "java",
             "name": "Launch PtoY",
