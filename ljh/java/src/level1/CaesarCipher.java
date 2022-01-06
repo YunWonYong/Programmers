@@ -4,6 +4,8 @@ package level1;
  * 시저암호(211231 - 220107) 
  */
 
+// 알파벳 소문자, 대문자 분리 후 문제 수정. 9,11,12,13 실패
+
 public class CaesarCipher {
 
 	public String solution(String s, int n) {
@@ -21,10 +23,19 @@ public class CaesarCipher {
 				sb.append(' ');
 				space = true;
 				
-			}else { //문자가 공백이 아닐 때 즉, 알파벳일 때
+			}else if('a' <= c && c <= 'z'){ //알파벳 소문자일 때
 				c = (char)(c + n);
 				
-				if(!(('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))) {
+				if(!('a' <= c && c <= 'z')) {
+					c = (char)(c - 26);
+				}
+				
+				sb.append(c);
+				space = false;
+			}else { //알파벳 대문자일 때
+				c = (char)(c + n);
+				
+				if(!('A' <= c && c <= 'Z')) {
 					c = (char)(c - 26);
 				}
 				
@@ -34,4 +45,5 @@ public class CaesarCipher {
 		}
 		return sb.toString();
 	}
+	
 }
