@@ -19,6 +19,7 @@ public class CaesarCipher {
 			c = s.charAt(i);
 			
 			if(c == ' ') { // 문자가 공백일 때
+				sb.append(c);
 				continue;
 			}
 			
