@@ -25,20 +25,16 @@ public class CaesarCipher {
 				
 			}else if('a' <= c && c <= 'z'){ //알파벳 소문자일 때
 				c = (char)(c + n);
-				
-				if(!('a' <= c && c <= 'z')) {
+				if(c > 'z') {
 					c = (char)(c - 26);
 				}
-				
 				sb.append(c);
 				space = false;
 			}else { //알파벳 대문자일 때
 				c = (char)(c + n);
-				
-				if(!('A' <= c && c <= 'Z')) {
+				if(c > 'Z') {
 					c = (char)(c - 26);
 				}
-				
 				sb.append(c);
 				space = false;
 			}
