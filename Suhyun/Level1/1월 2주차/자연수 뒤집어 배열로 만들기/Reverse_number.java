@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Reverse_number {
     public static void main(String[] args) {
         long n=123123123;
@@ -9,7 +11,7 @@ public class Reverse_number {
             n=n/10;
         }
 
-        System.out.println(answer);
+        System.out.println(Arrays.toString(answer));
         //return asnwer;
     }
 }

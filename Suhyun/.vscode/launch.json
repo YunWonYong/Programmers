@@ -1,8 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
-
+        {
+            "type": "java",
+            "name": "Launch Reverse_number",
+            "request": "launch",
+            "mainClass": "Reverse_number",
+            "projectName": "Suhyun_80ff6f51"
+        },
         {
             "type": "java",
             "name": "Launch Caesar",
