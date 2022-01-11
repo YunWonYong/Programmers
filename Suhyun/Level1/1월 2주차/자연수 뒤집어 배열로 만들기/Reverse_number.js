@@ -1,6 +1,6 @@
 let n=123456789;
-let str = n.toString();
-let ch = str.split('');
+let str=n.toString();
+let ch=str.split('');
 let answer=[];
 
 for(let i=str.length; i>0 ; i--){
@@ -15,8 +15,8 @@ console.log(answer);
 
 //프로그래머스용 
 function solution(n) {
-    let str = n.toString();
-    let ch = str.split('');
+    let str=n.toString();
+    let ch=str.split('');
     let answer=[];
         
     for(let i=str.length; i>0 ; i--){

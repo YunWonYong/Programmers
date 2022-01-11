@@ -7,7 +7,7 @@ public class Add_digit {
         int n=1032;
         int answer=0;
         while(true){
-            answer = answer +(n%10);
+            answer=answer+(n%10);
             n=n/10;
             if(n==0)break;
             
