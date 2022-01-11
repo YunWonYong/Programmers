@@ -3,7 +3,7 @@ import java.util.stream.Stream;
 
 class Solution {
   public String solution(String s) {
-    String[] words = s.split(" ");
+    String[] words = s.split(" ", -1);
     return Stream.of(words)
       .map(Solution::convert)
       .collect(Collectors.joining(" "));
