@@ -15,7 +15,7 @@ public class SumOfFactors {
 		int left = 0;
 		int right = 0;
 		int mid = n / 2;
-		while(left < n) {
+		while(left < n && left <= mid) {
 			left++;
 			right = n / left;
 			if (left * right == n) {
@@ -30,9 +30,6 @@ public class SumOfFactors {
 			}
 			answer += temp;
 			temp = 0;
-			if (left > mid) {
-				break;
-			}
 		}
 		return answer;
 	}
