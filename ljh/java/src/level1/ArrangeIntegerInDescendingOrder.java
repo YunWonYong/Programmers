@@ -7,8 +7,8 @@ import java.util.Arrays;
  */
 
 public class ArrangeIntegerInDescendingOrder {
-	
-	// 각 자리수에 -1 곱한 숫자 배열 만들어서 정렬 후 연산으로 Long 타입 변수 만들어서 반환
+
+    // 각 자리수에 -1 곱한 숫자 배열 만들어서 정렬 후 연산으로 Long 타입 변수 만들어서 반환
     public long solution(long n) {
         int[] arr = new int[(int)Math.log10(n)+1];
         long answer;
