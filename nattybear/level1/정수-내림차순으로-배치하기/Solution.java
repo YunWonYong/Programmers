@@ -4,6 +4,7 @@ import java.util.Collections;
 class Solution {
   public long solution(long n) {
     ArrayList<Integer> digits = toDigits(n);
+    Collections.sort(digits);
     Collections.reverse(digits);
     return toNumber(digits);
   }
@@ -24,7 +25,7 @@ class Solution {
     long sum = 0;
 
     for (int i = 0; i < digits.size(); i++)
-      sum += digits.get(i) * (int) Math.pow(10, digits.size() - i + 1);
+      sum += digits.get(i) * Math.pow(10, digits.size() - i - 1);
 
     return sum;
   }
