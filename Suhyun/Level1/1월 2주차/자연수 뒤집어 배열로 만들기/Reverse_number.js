@@ -1,6 +1,7 @@
 let n=123456789;
 let str=n.toString();
 let ch=str.split('');
+
 let answer=[];
 
 for(let i=str.length; i>0 ; i--){
