@@ -15,7 +15,7 @@ public class Okasii_mozi {
         String s="try hello world";
         
         int count=0;
-        char[] arr= s.toCharArray();
+        char[] arr=s.toCharArray();
 
         for(int i=0; i<s.length() ; i++){
             if (arr[i]==' '){

@@ -14,6 +14,10 @@ public class Add_digit {
         }
 
         System.out.println(answer);
+
+        int i = 10;
+        int num = i * i;
+        
     }
     
 }
