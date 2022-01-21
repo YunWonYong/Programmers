@@ -13,4 +13,14 @@ export default class ColatzGuess {
             }
         }
     }
+
+    solution2 = (num, count) => {
+        count >>= 0;
+        if (count === 500) {
+            return -1;
+        } else if (num === 1) {
+            return count;
+        }
+        return this.solution2(num % 2 === 0 ? num / 2 : num * 3 + 1, ++count);
+    }
 }
