@@ -10,13 +10,13 @@ func Recursive(count *int, num int) int {
 	if num == 1 {
 		return *count
 	}
-	*count = *count + 1
+	*count += 1
 	if *count == 500 {
 		return -1
-	} else if num%2 == 0 {
-		return Recursive(count, num/2)
+	} else if num % 2 == 0 {
+		return Recursive(count, num / 2) 
 	}
-	return Recursive(count, num*3+1)
+	return Recursive(count, num * 3 + 1)
 }
 
 func Solution(num int) int {
@@ -28,7 +28,7 @@ func Solution(num int) int {
 			return -1
 		}
 		count++
-		if num%2 == 0 {
+		if num % 2 == 0 {
 			num /= 2
 			continue
 		}
