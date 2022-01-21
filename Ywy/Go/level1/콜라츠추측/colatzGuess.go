@@ -18,3 +18,21 @@ func Recursive(count *int, num int) int {
 	}
 	return Recursive(count, num*3+1)
 }
+
+func Solution(num int) int {
+	count := 0
+	for {
+		if num == 1 {
+			return count
+		} else if count == 500 {
+			return -1
+		}
+		count++
+		if num%2 == 0 {
+			num /= 2
+			continue
+		}
+		num *= 3
+		num++
+	}
+}
