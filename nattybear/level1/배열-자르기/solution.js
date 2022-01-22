@@ -1,16 +1,32 @@
 function solution(n, left, right) {
-  const rows = []
-  for (let i = 1; i <= n; i++) {
-    let j = 1
-    for (; j <= i; j++) {
-      rows.push(i)
-    }
-    for (; j <= n; j++) {
-      rows.push(j)
-    }
-  }
-  return rows.slice(left, right+1)
+  const gen = go(n)
+  return Array.from(take(right - left + 1, drop(left, gen)))
 }
 
-console.log(solution(3, 2, 5))
-console.log(solution(4, 7, 14))
+function* go(n) {
+  for (let i = 1; i <= n; i++) {
+    yield* take(i, repeat(i))
+    yield* drop(i, range(n))
+  }
+}
+
+function* range(end) {
+  for (let i = 1; i <= end; i++)
+    yield i
+}
+
+function* repeat(n) {
+  while (true)
+    yield n
+}
+
+function* take(n, xs) {
+  for (let i = 0; i < n; i++)
+    yield xs.next().value
+}
+
+function* drop(n, xs) {
+  for (let i = 0; i < n; i++)
+    xs.next()
+  yield* xs
+}
