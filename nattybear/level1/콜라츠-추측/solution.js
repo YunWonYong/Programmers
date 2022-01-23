@@ -1,14 +1,14 @@
 function solution(num) {
-  const len = collatz(num).length - 1
-  return (len < 500) ? len : -1
+  const answer  = collatz(num)
+  return (answer < 500) ? answer : -1
 }
 
 function collatz(x) {
-  // base case
   if (x == 1)
-    return [1]
+    return 0
 
-  const y = (x % 2 == 0) ? x / 2 : x*3 + 1
-
-  return [x].concat(collatz(y))
+  if (x % 2 == 0)
+    return 1 + collatz(Math.floor(x / 2))
+  else
+    return 1 + collatz(x*3 + 1)
 }
