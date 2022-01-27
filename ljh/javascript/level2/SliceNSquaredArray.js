@@ -2,7 +2,6 @@
 export default class SliceNSquaredArray {
     solution = (n, left, right) => {
         let answer = [];
-        let length = right-left+1;
         let row = 0;
         let col = 0;
         
