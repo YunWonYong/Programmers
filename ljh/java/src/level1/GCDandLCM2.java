@@ -13,7 +13,7 @@ public class GCDandLCM2 {
 		int[] answer = {1,1};
 		int divisor = 2;
 		
-		while(n>divisor || m>divisor) {
+		while(n>=divisor && m>=divisor) {
 			if(n%divisor==0 && m%divisor==0) {
 				n /= divisor;
 				m /= divisor;
@@ -23,7 +23,7 @@ public class GCDandLCM2 {
 			}
 		}
 		
-		answer[1] = n*m*answer[0];
+		answer[1] = n*m/answer[0];
 		
 		return answer;
 		

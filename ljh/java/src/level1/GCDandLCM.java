@@ -3,6 +3,10 @@ package level1;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 최대공약수와 최대공배수 (220122-220128)
+ */
+
 public class GCDandLCM {
 	// 소인수분해해서 구하기
 	public int[] solution(int n, int m) {
@@ -27,7 +31,7 @@ public class GCDandLCM {
 			}
 		}
 		
-		answer[1] = (n*m)/answer[0];
+		answer[1] = (int)(((long)n*(long)m)/answer[0]);
 		
 		return answer;
 	}
