@@ -1,17 +1,15 @@
-import java.util.stream.LongStream;
-
 class Solution {
   public int solution(int num) {
-    long len = collatz(num).count() - 1;
+    long len = collatz(num);
     return (len < 500) ? (int) len : -1;
   }
 
-  static LongStream collatz(long x) {
+  static long collatz(long x) {
     if (x == 1)
-      return LongStream.of(1);
+      return 0;
 
     long y = (x % 2 == 0) ? x / 2 : x*3 + 1;
 
-    return LongStream.concat(LongStream.of(x), collatz(y));
+    return 1 + collatz(y);
   }
 }
