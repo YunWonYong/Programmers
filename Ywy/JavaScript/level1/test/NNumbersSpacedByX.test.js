@@ -1,4 +1,4 @@
-import XNumbersSpacedByX from '../XNumbersSpacedByX';
+import NNumbersSpacedByX from '../NNumbersSpacedByX';
 
 test("2, 5 is [2,4,6,8,10]", () => {
     expect(new XNumbersSpacedByX().solution(2, 5)).toEqual([2, 4, 6, 8, 10]);
