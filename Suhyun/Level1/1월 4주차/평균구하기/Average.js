@@ -5,4 +5,6 @@ let answer = arr.reduce(function (a,b){
     return a+b;
 },0);
 
-return answer=answer/arr.length;
+//return answer=answer/arr.length;
+// answer /= length;
+return answer/arr.length;
