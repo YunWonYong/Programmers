@@ -1,12 +1,11 @@
 function solution(x, n) {
-  return take(n, repeat(x))
+  return take(n, iterate(y => y + x, x))
 }
 
-function* repeat(n) {
-  const m = n
+function* iterate(f, x) {
   while (true) {
-    yield n
-    n += m
+    yield x
+    x = f(x)
   }
 }
 
