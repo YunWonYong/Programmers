@@ -13,9 +13,10 @@ function solution(arr1, arr2) {
 
     let len = arr1.length;
 
-    arr3[i] = arr1[i] + arr2[i];
-
-
+    for(let i=0; i<len; i++){
+        arr3[i] = arr1[i] + arr2[i];
+    }
+    
     while(end<=len){
         answer.push(arr3.slice(begin, end));
         begin += col_len;
