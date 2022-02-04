@@ -32,6 +32,8 @@
       </td>
       <td>
         :one:🏃
+        <br>
+        2️⃣🏃
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
@@ -56,7 +58,9 @@
         2021-10-08
       </td>
       <td>
-        :one:🏃
+        :one::crown::100:
+        <br>
+        2️⃣🏃
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
@@ -82,6 +86,8 @@
       </td>
       <td>
         :one:🏃
+        <br>
+        2️⃣🏃
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
@@ -107,6 +113,8 @@
       </td>
       <td>
         :one:🏃
+        <br>
+        2️⃣🏃
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
@@ -132,6 +140,8 @@
       </td>
       <td>
         :one:🏃
+        <br>
+        2️⃣🏃
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
@@ -148,4 +158,5 @@
 <hr>
 <h3>📆 일정</h3>
 
-+ :one: [2021-10-16 ~ 2022-02-16]
++ :one: [2021-10-16 ~ 2022-02-11]
++ :two: [2022-02-11 ~ ]
