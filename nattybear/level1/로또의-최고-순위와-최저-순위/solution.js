@@ -1,9 +1,9 @@
 function solution(lottos, win_nums) {
   const corrects = lottos.filter(x => win_nums.includes(x)).length
   const zeros = lottos.filter(x => x == 0).length
-  const max = rank(corrects + zeros)
-  const min = rank(corrects)
-  return [max, min]
+  const high = rank(corrects + zeros)
+  const low = rank(corrects)
+  return [high, low]
 }
 
 function rank(corrects) {
