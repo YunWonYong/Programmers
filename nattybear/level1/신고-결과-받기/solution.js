@@ -19,8 +19,9 @@ function solution(id_list, report, k) {
   const graph = new Map()
   id_list.map(x => graph.set(x, new Set()))
 
-  const edges = report.map(x => x.split(' '))
-  edges.map(pair => graph.get(pair[1]).add(pair[0]))
+  report
+    .map(x => x.split(' '))
+    .map(pair => graph.get(pair[1]).add(pair[0]))
 
   const counter = new Counter(id_list)
 
