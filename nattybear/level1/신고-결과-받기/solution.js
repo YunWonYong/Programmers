@@ -24,8 +24,7 @@ function solution(id_list, report, k) {
 
   const counter = new Counter(id_list)
 
-  const abusers = Array
-    .from(graph.entries())
+  Array.from(graph.entries())
     .filter(pair => pair[1].size >= k)
     .map(pair => Array.from(pair[1]).map(x => counter.add(x)))
 
