@@ -15,6 +15,7 @@ class Solution {
     for (String[] pair : pairs)
       graph.get(pair[1]).add(pair[0]);
 
+
     return new int[] {};
   }
 }
@@ -36,5 +37,39 @@ class Graph {
 
   public Edge get(String key) {
     return graph.get(key);
+  }
+
+  public Pair[] makePairs() {
+    Pair[] pairs = new Pair[graph.size()];
+  }
+
+  public static Pair[] zip(String[] id, Edge edge) {
+  }
+}
+
+class Pair {
+  private String id;
+  private int count;
+
+  public Pair(String id, int count) {
+    this.id = id;
+    this.count = count;
+  }
+
+  public String fst() {
+    return id;
+  }
+
+  public int snd() {
+    return count;
+  }
+}
+
+class Counter {
+  private HashMap<String,Integer> counter;
+
+  public Counter(String[] id_list) {
+    counter = new HashMap<>();
+    Arrays.stream(id_list).map(x -> counter.put(x, 0));
   }
 }
