@@ -2,8 +2,7 @@ import java.util.*;
 
 class Reporters extends HashSet<String> {}
 
-class Graph extends HashMap<String,Reporters> {
-}
+class Graph extends HashMap<String,Reporters> {}
 
 class Solution {
   public int[] solution(String[] id_list, String[] report, int k) {
