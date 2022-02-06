@@ -19,7 +19,18 @@ class Solution {
       graph.get(id).add(reporter);
     }
 
-    return new int[] {};
+    Counter counter = new Counter(id_list);
+
+    for (Map.Entry<String,Reporters> map : graph.entrySet()) {
+      Reporters reporters = map.getValue();
+      if (reporters.size() >= k)
+        counter.add(reporters);
+    }
+
+    return Arrays
+      .stream(id_list)
+      .mapToInt(x -> counter.get(x))
+      .toArray();
   }
 }
 
@@ -34,5 +45,10 @@ class Counter extends HashMap<String,Integer> {
     int current = super.get(id);
     int new_current = current + 1;
     super.put(id, new_current);
+  }
+
+  public void add(Reporters reporters) {
+    for (String id : reporters)
+      add(id);
   }
 }
