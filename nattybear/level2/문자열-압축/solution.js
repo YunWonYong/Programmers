@@ -1,3 +1,10 @@
+function solution(s) {
+  const xs = []
+  for (let i = 1; i < s.length; i++)
+    xs.push(compress(s, i).length)
+  return Math.min(...xs)
+}
+
 function take(n, s) {
   if (s.length <= n)
     return s
@@ -49,5 +56,8 @@ function count(xs) {
     return n.toString() + x
 }
 
-console.log(compress("ababcdcdababcdcd", 1))
-console.log(compress("ababcdcdababcdcd", 2))
+console.log(solution("aabbaccc"))
+console.log(solution("ababcdcdababcdcd"))
+console.log(solution("abcabcdede"))
+console.log(solution("abcabcabcabcdededededede"))
+console.log(solution("xababcdcdababcdcd"))
