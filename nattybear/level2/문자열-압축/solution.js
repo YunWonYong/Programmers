@@ -11,6 +11,12 @@ function drop(n, s) {
 }
 
 function compress(s, n) {
+  return split(s, n)
+    .map(count)
+    .join('')
+}
+
+function split(s, n) {
   let can = []
   const bag = []
   function go(s) {
@@ -34,4 +40,14 @@ function compress(s, n) {
   return bag
 }
 
-console.log(compress("hello", 1))
+function count(xs) {
+  const x = take(1, xs)
+  const n = xs.length
+  if (n == 1)
+    return x
+  else
+    return n.toString() + x
+}
+
+console.log(compress("ababcdcdababcdcd", 1))
+console.log(compress("ababcdcdababcdcd", 2))
