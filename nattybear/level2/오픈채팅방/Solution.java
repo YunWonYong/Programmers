@@ -7,11 +7,15 @@ class Solution {
   public String[] solution(String[] record) {
     buffer = new ArrayList<>();
     map = new HashMap<>();
-    for (String line : record) {
-      Data data = parse(line);
-      assign(data);
-      print(data);
-    }
+
+    Data[] datas = Arrays
+      .stream(record)
+      .map(Solution::parse)
+      .toArray(Data[]::new);
+
+    Arrays.stream(datas).forEach(Solution::assign);
+    Arrays.stream(datas).forEach(Solution::print);
+
     return buffer.toArray(String[]::new);
   }
 
@@ -19,7 +23,7 @@ class Solution {
     String[] tokens = line.split(" ");
     String command = tokens[0];
     String id = tokens[1];
-    String name = tokens[2];
+    String name = (tokens.length > 2) ? tokens[2] : "";
     return new Data(command, id, name);
   }
 
