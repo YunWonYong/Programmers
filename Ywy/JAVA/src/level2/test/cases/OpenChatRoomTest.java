@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import level2.OpenChatRoom;
-import level2.StringCompression;
 
 public class OpenChatRoomTest {
 	private String[][] inputs;
