@@ -1,4 +1,6 @@
 function solution(s) {
+  if (s.length == 1)
+    return 1
   const xs = []
   for (let i = 1; i < s.length; i++)
     xs.push(compress(s, i).length)
@@ -55,9 +57,3 @@ function count(xs) {
   else
     return n.toString() + x
 }
-
-console.log(solution("aabbaccc"))
-console.log(solution("ababcdcdababcdcd"))
-console.log(solution("abcabcdede"))
-console.log(solution("abcabcabcabcdededededede"))
-console.log(solution("xababcdcdababcdcd"))
