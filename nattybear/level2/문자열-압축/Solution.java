@@ -1,7 +1,11 @@
 import java.util.*;
+import java.util.stream.*;
 
 class Solution {
   public int solution(String s) {
+    Robot robot = new Robot(2);
+    robot.split(s.toCharArray());
+    System.out.println(robot.getList());
     return 0;
   }
 }
@@ -17,10 +21,12 @@ class Robot {
     list = new ArrayList<>();
   }
 
-  public String count(String s) {
-    if (s.length() == 1)
-      return s;
-    return String.valueOf(s.length()) + s.charAt(0);
+  public String compress(String s) {
+    split(s.toCharArray());
+    return list
+      .stream()
+      .map(x -> count(x))
+      .collect(Collectors.joining());
   }
 
   public void split(char[] s) {
@@ -40,13 +46,21 @@ class Robot {
     }
   }
 
+  public String count(String s) {
+    char[] c = Util.take(n, s.toCharArray());
+    int len = s.length();
+    if (len == 1)
+      return String.valueOf(c);
+    return String.valueOf(len) + String.valueOf(c);
+  }
+
   public ArrayList<String> getList() {
     return list;
   }
 }
 
 class Util {
-  static char[] take(int n, char[] s) {
+  public static char[] take(int n, char[] s) {
     if (s.length <= n)
       return s;
     char[] t = new char[n];
@@ -55,7 +69,7 @@ class Util {
     return t;
   }
 
-  static char[] drop(int n, char[] s) {
+  public static char[] drop(int n, char[] s) {
     if (s.length <= n)
       return new char[] {};
     int newLength = s.length - n;
