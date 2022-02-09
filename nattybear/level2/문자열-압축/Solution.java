@@ -3,27 +3,36 @@ import java.util.stream.*;
 
 class Solution {
   public int solution(String s) {
-    Robot robot = new Robot(2);
-    robot.split(s.toCharArray());
-    System.out.println(robot.getList());
-    return 0;
+    if (s.length() == 1)
+      return 1;
+    ArrayList<Integer> list = new ArrayList<>();
+    Robot robot;
+    for (int i = 1; i < s.length(); i++) {
+      robot = new Robot(i);
+      list.add(robot.compress(s).length());
+    }
+    return Collections.min(list);
   }
 }
 
+class Car extends ArrayList<char[]> {}
+
+class Train extends ArrayList<Car> {}
+
 class Robot {
   private int n;
-  private StringBuilder builder;
-  private ArrayList<String> list;
+  private Car car;
+  private Train train;
 
   public Robot(int n) {
     this.n = n;
-    builder = new StringBuilder();
-    list = new ArrayList<>();
+    car = new Car();
+    train = new Train();
   }
 
   public String compress(String s) {
     split(s.toCharArray());
-    return list
+    return train 
       .stream()
       .map(x -> count(x))
       .collect(Collectors.joining());
@@ -36,26 +45,26 @@ class Robot {
     char[] tail = Util.drop(n, s);
     char[] snd = Util.take(n, tail);
     if (Arrays.equals(fst, snd)) {
-      builder.append(fst);
+      car.add(fst);
       split(tail);
     } else {
-      builder.append(fst);
-      list.add(builder.toString());
-      builder = new StringBuilder();
+      car.add(fst);
+      train.add(car);
+      car = new Car();
       split(tail);
     }
   }
 
-  public String count(String s) {
-    char[] c = Util.take(n, s.toCharArray());
-    int len = s.length();
+  public String count(Car car) {
+    char[] c = car.get(0);
+    int len = car.size();
     if (len == 1)
       return String.valueOf(c);
     return String.valueOf(len) + String.valueOf(c);
   }
 
-  public ArrayList<String> getList() {
-    return list;
+  public Train getTrain() {
+    return train;
   }
 }
 
