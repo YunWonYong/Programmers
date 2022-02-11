@@ -1,5 +1,5 @@
 // n^2 배열 자르기(220122-220128)
-export default class SliceNSquaredArray {
+class SliceNSquaredArray {
     solution = (n, left, right) => {
         let answer = [];
         let row = 0;
