@@ -113,7 +113,7 @@ class TokenCalculator{
 			}
 			sb.append(c);
 			if (index == range) {
-				return new Calculator(sb.toString().replace("[\s]{1,}", "").replace("[\\,]{1,}", ",").trim().split(","));
+				return new Calculator(sb.toString().replace("[\\s]{1,}", "").replace("[\\,]{1,}", ",").trim().split(","));
 			} else if (Pattern.matches("[^0-9]", c)) {
 				sb.append(",");
 			}

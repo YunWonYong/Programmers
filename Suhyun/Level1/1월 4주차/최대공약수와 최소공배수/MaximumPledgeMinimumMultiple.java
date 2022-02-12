@@ -17,7 +17,7 @@ public class MaximumPledgeMinimumMultiple {
     public static int euclidean(int big, int small){
         int val=big%small;
         
-        if(val==1){
+        if(val==0){
             return small;
         }
         else{

@@ -1,6 +1,6 @@
 public class Collatz {
     public static void main(String[] args) {
-        int num=626331;
+        int num=1;
         long num2=num;
         int answer=0;
     

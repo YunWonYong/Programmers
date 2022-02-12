@@ -1,26 +1,28 @@
 
 /bin/
 
-JAVA/.metadata/
+/.metadata/
 
-JAVA/bin/
+/bin/
 
-JAVA/.settings/
+/.settings/
 
-JAVA/.classpath
+/.classpath
 
-JAVA/.project
+/.project
 
-JavaScript/coverage/
+/coverage/
 
-JavaScript/node_modules/
+/node_modules/
 
-JavaScript/babel.config.json
+/babel.config.json
 
-JavaScript/jest.config.json
+/jest.config.json
 
-JavaScript/package.json
+/package.json
 
-JavaScript/package-lock.json
+/package-lock.json
 
 /.metadata/
+
+
