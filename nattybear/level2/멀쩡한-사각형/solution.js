@@ -6,16 +6,29 @@ function solution(w, h) {
 
 function bresenham(w, h) {
   const line = h / w
-  function go(x, y) {
+  let x = 1
+  let y = 1
+  let n = 0
+  while (true) {
     if (x == w && y == h)
-      return 1
-    const slope = y / x
-    if (slope < line)
-      return 1 + go(x, y+1)
-    if (slope > line)
-      return 1 + go(x+1, y)
-    if (slope == line)
-      return 1 + go(x+1, y+1)
+      break
+    let slope = y / x
+    if (slope < line) {
+      y++ 
+      n++
+      continue
+    }
+    if (slope > line) {
+      x++
+      n++
+      continue
+    }
+    if (slope == line) {
+      x++
+      y++
+      n++
+      continue
+    }
   }
-  return go(1, 1)
+  return n + 1
 }
