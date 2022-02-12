@@ -1,12 +1,11 @@
 class Solution {
   public long solution(int w, int h) {
-    long total = (long) (w * h);
+    long total = (long)w * (long)h;
     long invalid = bresenham(w, h);
-    System.out.println(total + " " + invalid);
     return total - invalid;
   }
 
-  static long bresenham(long w, long h) {
+  static long bresenham(int w, int h) {
     double line = (double)h / w;
     int x = 1;
     int y = 1;
