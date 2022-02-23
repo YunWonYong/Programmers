@@ -1,5 +1,5 @@
 function solution(progresses, speeds) {
-  return deploy(zip_with(days, progresses, speeds))
+  return group(zip_with(days, progresses, speeds))
     .map(x => x.length)
 }
 
@@ -21,32 +21,27 @@ function zip_with(f, xs, ys) {
     let z = f(x, y)
     zs.push(z)
   }
+  console.log(zs)
   return zs
 }
 
-function group_by(f, xs) {
+function group(xs) {
   const yys = []
   let ys = []
   for (let i = 0; i < xs.length; i++) {
-    let a = xs[i]
-    let b = xs[i+1]
-    if (f(a, b)) {
-      ys.push(a)
+    let x = xs[i]
+    if (ys.length == 0) {
+      ys.push(x)
+      continue
+    }
+    if (ys[0] >= x) {
+      ys.push(x)
     }
     else {
-      ys.push(a)
       yys.push(ys)
-      ys = []
+      ys = [x]
     }
   }
+  yys.push(ys)
   return yys
 }
-
-function deploy(xs) {
-  return group_by((x,y) => x >= y, xs)
-}
-
-progresses = [93, 30, 55]
-speeds = [1, 30, 5]
-
-console.log(solution(progresses, speeds))
