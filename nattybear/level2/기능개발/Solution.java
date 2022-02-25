@@ -4,10 +4,10 @@ class Ints extends ArrayList<Integer> {}
 
 class Solution {
   public int[] solution(int[] progresses, int[] speeds) {
-    return group(zip(progresses, speeds));
+    return group(zipWithDays(progresses, speeds));
   }
 
-  static int[] zip(int[] progresses, int[] speeds) {
+  static int[] zipWithDays(int[] progresses, int[] speeds) {
     int size = speeds.length;
     int[] xs = new int[size];
     for (int i = 0; i < size; i++) {
