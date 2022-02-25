@@ -9,13 +9,13 @@ class Solution {
     makeTree(IntStream.empty(), depth);
     return (int) signs
       .build()
-      .map(xs -> zipWith(xs, numbers))
+      .map(xs -> zipWithMul(xs, numbers))
       .mapToInt(xs -> xs.sum())
       .filter(x -> x == target)
       .count();
   }
 
-  static IntStream zipWith(IntStream xs, int[] numbers) {
+  static IntStream zipWithMul(IntStream xs, int[] numbers) {
     PrimitiveIterator.OfInt ys = xs.iterator();
     IntStream.Builder zs = IntStream.builder();
     for (int i = 0; i < numbers.length; i++) {
