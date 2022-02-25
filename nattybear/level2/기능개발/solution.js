@@ -21,7 +21,6 @@ function zip_with(f, xs, ys) {
     let z = f(x, y)
     zs.push(z)
   }
-  console.log(zs)
   return zs
 }
 
