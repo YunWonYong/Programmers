@@ -1,4 +1,6 @@
 function solution(s) {
+  if (s.length % 2 == 1)
+    return 0
   const xs = s.split('')
   remove_pair(xs)
   if (xs.length == 0)
