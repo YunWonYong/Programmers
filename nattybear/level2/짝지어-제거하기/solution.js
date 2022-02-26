@@ -1,25 +1,30 @@
 function solution(s) {
-  const xs = s.split('')
-  remove_pair(xs)
-  if (xs[0])
-    return 0
-  else
+  for (let i = 0; i < s.length; i++)
+    push(s[i])
+  if (empty())
     return 1
+  else
+    return 0
 }
 
-function remove_pair(xs) {
-  let i = 0
-  while (true) {
-    let x = xs[i]
-    let y = xs[i+1]
-    if (!x || !y)
-      break
-    if (x == y) {
-      xs.splice(i, 2)
-      i = 0
-      continue
-    }
-    i++
+const stack = []
+
+function push(x) {
+  if (empty())
+    stack.push(x)
+  else {
+    if (x == peek())
+      stack.pop()
+    else
+      stack.push(x)
   }
-  return xs
+}
+
+function empty() {
+  return stack.length == 0
+}
+
+function peek() {
+  const size = stack.length
+  return stack[size - 1]
 }
