@@ -1,3 +1,10 @@
+class Point {
+  constructor(x, y) {
+    this.x = x
+    this.y = y
+  }
+}
+
 function make_matrix(row, column) {
   let x = 1
   let line = []
@@ -12,5 +19,3 @@ function make_matrix(row, column) {
   }
   return lines
 }
-
-console.log(make_matrix(6, 6))
