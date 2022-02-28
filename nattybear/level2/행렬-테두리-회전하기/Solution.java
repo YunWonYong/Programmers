@@ -89,14 +89,13 @@ class Matrix {
   void makeMatrix(int row, int column) {
     int x = 1;
     Xs line = new Xs();
-    matrix = new Xxs();
     for (int i = 0; i < row; i++) {
-      for (int j = 0; i < column; j++) {
+      for (int j = 0; j < column; j++) {
         line.add(x);
         x++;
       }
       matrix.add(line);
-      line.clear();
+      line = new Xs();
     }
   }
 
