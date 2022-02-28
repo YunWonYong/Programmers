@@ -51,6 +51,11 @@ class Point {
 
 class Matrix {
   constructor(row, column) {
+    this.make_matrix(row, column)
+    this.border = []
+  }
+
+  make_matrix(row, column) {
     let x = 1
     let line = []
     this.matrix = []
@@ -80,6 +85,7 @@ class Matrix {
       this.move(q, query)
     }
     this.set(q, value)
+    this.border.push(value)
   }
 
   rotate(query) {
@@ -87,11 +93,19 @@ class Matrix {
     const start = new Point(x1, y1)
     this.move(start, query)
   }
+
+  min() {
+    return Math.min(...this.border)
+  }
 }
 
 function solution(rows, columns, queries) {
+  const matrix = new Matrix(rows, columns)
+  const answer = []
+  queries.forEach(query => {
+    matrix.rotate(query)
+    answer.push(matrix.min())
+    matrix.border = []
+  })
+  return answer
 }
-
-const m = new Matrix(6, 6)
-m.rotate([2,2,5,4])
-console.log(m.matrix)
