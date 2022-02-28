@@ -95,7 +95,9 @@ class Matrix {
   }
 
   min() {
-    return Math.min(...this.border)
+    const m = Math.min(...this.border)
+    this.border = []
+    return m
   }
 }
 
@@ -105,7 +107,6 @@ function solution(rows, columns, queries) {
   queries.forEach(query => {
     matrix.rotate(query)
     answer.push(matrix.min())
-    matrix.border = []
   })
   return answer
 }
