@@ -81,11 +81,17 @@ class Matrix {
     }
     this.set(q, value)
   }
+
+  rotate(query) {
+    const [x1, y1, x2, y2] = query
+    const start = new Point(x1, y1)
+    this.move(start, query)
+  }
 }
 
 function solution(rows, columns, queries) {
 }
 
 const m = new Matrix(6, 6)
-m.move(new Point(2, 2), [2,2,5,4])
+m.rotate([2,2,5,4])
 console.log(m.matrix)
