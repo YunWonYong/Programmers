@@ -20,31 +20,31 @@ class Point {
     return new Point(this.x, this.y + 1)
   }
 
-  next(point, query) {
+  next(query) {
     const [x1, y1, x2, y2] = query
-    if (point.x == x1) {
-      if (point.y == y2) {
-        return point.down()
+    if (this.x == x1) {
+      if (this.y == y2) {
+        return this.down()
       }
-      return point.right()
+      return this.right()
     }
-    if (point.y == y2) {
-      if (point.x == x2) {
-        return point.left()
+    if (this.y == y2) {
+      if (this.x == x2) {
+        return this.left()
       }
-      return point.down()
+      return this.down()
     }
-    if (point.x == x2) {
-      if (point.y == y1) {
-        return point.up()
+    if (this.x == x2) {
+      if (this.y == y1) {
+        return this.up()
       }
-      return point.left()
+      return this.left()
     }
-    if (point.y == y1) {
-      if (point.x == x1) {
-        return point.right()
+    if (this.y == y1) {
+      if (this.x == x1) {
+        return this.right()
       }
-      return point.up()
+      return this.up()
     }
   }
 }
@@ -71,11 +71,21 @@ class Matrix {
   set(point, value) {
     this.matrix[point.x-1][point.y-1] = value
   }
+
+  move(point, query) {
+    const value = this.get(point)
+    this.set(point, undefined)
+    const q = point.next(query)
+    if (this.get(q)) {
+      this.move(q, query)
+    }
+    this.set(q, value)
+  }
 }
 
 function solution(rows, columns, queries) {
 }
 
-const m = new Matrix(2,2)
-m.set(new Point(1,1), 7)
+const m = new Matrix(6, 6)
+m.move(new Point(2, 2), [2,2,5,4])
 console.log(m.matrix)
