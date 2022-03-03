@@ -18,17 +18,15 @@ public class RotateMatrixBorder {
 	private RotateMatrixBorder matrixFill(int rows, int columns) {
 		int x = querie[0] - 1;
 		int y = querie[1] - 1;
-		int xx = querie[2] - 1;
+		int xx = querie[2];
 		int yy = querie[3] - 1;
-		long el = 0;
-		fill(y, x, yy, columns);
-		while (++x < xx) {
-			el = x + y == 0 ? 1: ((long)x * columns) + 1;
-			matrix[x][y] = el + y;
-			matrix[x][yy] = el + yy;
+		while(true) {
+			fill(y, x, yy, columns);
+			if (++x == xx) {
+				return this;
+			}
+			
 		}
-		fill(y, x, yy, columns);
-		return this;
 	}
 	
 	private void fill(int y, int x, int yy, int columns) {
