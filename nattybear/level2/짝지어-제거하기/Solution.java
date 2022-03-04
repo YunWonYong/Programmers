@@ -1,42 +1,27 @@
 import java.util.ArrayList;
+import java.util.Stack;
 
 class Solution {
   public int solution(String s) {
-    Stack stack = new Stack();
+    CStack stack = new CStack();
     for (int i = 0; i < s.length(); i++)
-      stack.push(s.charAt(i));
-    if (stack.chars.isEmpty())
+      stack.foo(s.charAt(i));
+    if (stack.empty())
       return 1;
     else
       return 0;
   }
 }
 
-class Stack {
-  ArrayList<Character> chars;
-
-  Stack() {
-    chars = new ArrayList<>();
-  }
-
-  void push(char c) {
-    if (chars.isEmpty())
-      chars.add(c);
+class CStack extends Stack<Character> {
+  void foo(Character c) {
+    if (empty())
+      push(c);
     else {
-      if (top() == c)
+      if (peek() == c)
         pop();
       else
-        chars.add(c);
+        push(c);
     }
-  }
-
-  char top() {
-    int i = chars.size() - 1;
-    return chars.get(i);
-  }
-
-  void pop() {
-    int i = chars.size() - 1;
-    chars.remove(i);
   }
 }
