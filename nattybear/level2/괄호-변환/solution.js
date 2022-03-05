@@ -48,3 +48,10 @@ function balance(p) {
   const close = count(p, ')')
   return open == close
 }
+
+function valid(p) {
+  const stack = new Stack()
+  for (let c of p)
+    stack.push(c)
+  return stack.empty()
+}
