@@ -18,7 +18,7 @@ class Stack {
 
   push(value) {
     if (this.empty())
-      values.push(value)
+      this.values.push(value)
     else {
       if (this.peek() == value)
         this.pop()
