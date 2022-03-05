@@ -17,16 +17,22 @@ class Stack {
   }
 
   push(value) {
-    if (this.empty())
+    if (this.empty()) {
       this.values.push(value)
-    else {
-      if (this.peek() == value)
-        this.pop()
-      else
+      return
+    }
+    switch (value) {
+      case '(':
         this.values.push(value)
+        break
+      case ')':
+        if (this.peek() == '(')
+          this.pop()
+        else
+          this.values.push(value)
+        break
     }
   }
-
 }
 
 function count(xs, c) {
