@@ -35,6 +35,10 @@ class Stack {
   }
 }
 
+function solution(p) {
+  return to_valid(p)
+}
+
 function count(xs, c) {
   let count = 0
   for (let x of xs)
@@ -68,4 +72,24 @@ function _split(v, w) {
   const head = v.concat(w.slice(0, 2))
   const tail = w.slice(2)
   return _split(head, tail)
+}
+
+function to_valid(w) {
+  if (w.length == 0 || valid(w))
+    return w
+
+  const [u, v] = split(w)
+
+  if (valid(u))
+    return u.concat(to_valid(v))
+
+  return ["(", to_valid(v), ")", strip_reverse(u)].join("")
+}
+
+function strip_reverse(s) {
+  return s
+    .slice(1, -1)
+    .split("")
+    .reverse()
+    .join("")
 }
