@@ -67,7 +67,7 @@ function split(u) {
 }
 
 function _split(v, w) {
-  if (valid(v) || w.length == 0)
+  if (balance(v) || w.length == 0)
     return [v, w]
   const head = v.concat(w.slice(0, 2))
   const tail = w.slice(2)
