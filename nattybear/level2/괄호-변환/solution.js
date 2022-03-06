@@ -55,3 +55,17 @@ function valid(p) {
     stack.push(c)
   return stack.empty()
 }
+
+function split(u) {
+  const v = u.slice(0, 2)
+  const w = u.slice(2)
+  return _split(v, w)
+}
+
+function _split(v, w) {
+  if (valid(v) || w.length == 0)
+    return [v, w]
+  const head = v.concat(w.slice(0, 2))
+  const tail = w.slice(2)
+  return _split(head, tail)
+}
