@@ -83,10 +83,10 @@ function to_valid(w) {
   if (valid(u))
     return u.concat(to_valid(v))
 
-  return ["(", to_valid(v), ")", strip_reverse(u)].join("")
+  return ["(", to_valid(v), ")", strip_flip(u)].join("")
 }
 
-function strip_reverse(s) {
+function strip_flip(s) {
   return s
     .slice(1, -1)
     .split("")
