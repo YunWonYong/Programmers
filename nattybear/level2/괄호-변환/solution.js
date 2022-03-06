@@ -40,11 +40,11 @@ function solution(p) {
 }
 
 function count(xs, c) {
-  let count = 0
+  let _count = 0
   for (let x of xs)
     if (x == c)
-      count++
-  return count
+      _count++
+  return _count
 }
 
 function balance(p) {
