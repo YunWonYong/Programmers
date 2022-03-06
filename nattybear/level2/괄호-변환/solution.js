@@ -90,6 +90,13 @@ function strip_reverse(s) {
   return s
     .slice(1, -1)
     .split("")
-    .reverse()
+    .map(flip)
     .join("")
+}
+
+function flip(p) {
+  if (p == "(")
+    return ")"
+  else
+    return "("
 }
