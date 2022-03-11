@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
   public int solution(String str1, String str2) {
-    double j = jaccard(str1, str2);
+    double j = jaccard(str1.toUpperCase(), str2.toUpperCase());
     return (int) (j * 65536);
   }
 
