@@ -12,6 +12,13 @@ class Solution {
     }
     return list;
   }
+
+  static List<String> intersect(List<String> xs, List<String> ys) {
+    Counter c = new Counter(xs);
+    Counter d = new Counter(ys);
+    c.intersect(d);
+    return c.toList();
+  }
 }
 
 class Counter extends HashMap<String, Integer> {
