@@ -28,4 +28,8 @@ class Counter extends HashMap<String, Integer> {
         merge(k, v, Math::min);
     });
   }
+
+  void unify(Counter c) {
+    c.forEach((k, v) -> merge(k, v, Math::max));
+  }
 }
