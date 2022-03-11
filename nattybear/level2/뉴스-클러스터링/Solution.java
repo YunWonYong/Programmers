@@ -37,4 +37,13 @@ class Counter extends HashMap<String, Integer> {
   void unify(Counter c) {
     c.forEach((k, v) -> merge(k, v, Math::max));
   }
+
+  List<String> toList() {
+    List<String> xs = new ArrayList<>();
+    forEach((k, v) -> {
+      for (int i = 0; i < v; i++)
+        xs.add(k);
+    });
+    return xs;
+  }
 }
