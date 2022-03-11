@@ -16,12 +16,13 @@ class Solution {
   static List<String> intersect(List<String> xs, List<String> ys) {
     Counter c = new Counter(xs);
     Counter d = new Counter(ys);
-    c.intersect(d);
-    return c.toList();
+    return c.intersect(d).toList();
   }
 }
 
 class Counter extends HashMap<String, Integer> {
+  Counter() {}
+
   Counter(List<String> xs) {
     for (String x : xs)
       count(x);
@@ -34,11 +35,13 @@ class Counter extends HashMap<String, Integer> {
       put(s, get(s) + 1);
   }
 
-  void intersect(Counter c) {
-    c.forEach((k, v) -> {
-      if (get(k) != null)
-        merge(k, v, Math::min);
+  Counter intersect(Counter c) {
+    Counter d = new Counter();
+    forEach((k, v) -> {
+      if (c.get(k) != null)
+        d.put(k, Math.min(v, c.get(k)));
     });
+    return d;
   }
 
   void unify(Counter c) {
