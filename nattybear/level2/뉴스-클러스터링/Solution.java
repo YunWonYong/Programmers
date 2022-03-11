@@ -15,6 +15,11 @@ class Solution {
 }
 
 class Counter extends HashMap<String, Integer> {
+  Counter(List<String> xs) {
+    for (String x : xs)
+      count(x);
+  }
+
   void count(String s) {
     if (get(s) == null)
       put(s, 1);
