@@ -1,6 +1,14 @@
 import java.util.*;
 
 class Solution {
+  static double jaccard(String s, String t) {
+    List<String> xs = multiset(s);
+    List<String> ys = multiset(t);
+    List<String> intersection = intersect(xs, ys);
+    List<String> union = unify(xs, ys);
+    return (double) intersection.size() / union.size();
+  }
+
   static List<String> multiset(String s) {
     List<String> list = new ArrayList<>();
     StringBuilder builder = new StringBuilder();
