@@ -1,6 +1,11 @@
 import java.util.*;
 
 class Solution {
+  public int solution(String str1, String str2) {
+    double j = jaccard(str1, str2);
+    return (int) (j * 65536);
+  }
+
   static double jaccard(String s, String t) {
     List<String> xs = multiset(s);
     List<String> ys = multiset(t);
