@@ -9,6 +9,8 @@ class Solution {
   static double jaccard(String s, String t) {
     List<String> xs = multiset(s);
     List<String> ys = multiset(t);
+    if (xs.size() == 0 && ys.size() == 0)
+      return 1;
     List<String> intersection = intersect(xs, ys);
     List<String> union = unify(xs, ys);
     return (double) intersection.size() / union.size();
