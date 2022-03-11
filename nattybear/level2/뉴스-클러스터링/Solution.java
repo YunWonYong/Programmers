@@ -18,6 +18,13 @@ class Solution {
     Counter d = new Counter(ys);
     return c.intersect(d).toList();
   }
+
+  static List<String> unify(List<String> xs, List<String> ys) {
+    Counter c = new Counter(xs);
+    Counter d = new Counter(ys);
+    c.unify(d);
+    return c.toList();
+  }
 }
 
 class Counter extends HashMap<String, Integer> {
