@@ -18,8 +18,12 @@ class Solution {
     List<String> list = new ArrayList<>();
     StringBuilder builder = new StringBuilder();
     for (int i = 0; i < s.length()-1; i++) {
-      builder.append(s.charAt(i));
-      builder.append(s.charAt(i+1));
+      char a = s.charAt(i);
+      char b = s.charAt(i+1);
+      if (!Character.isAlphabetic(a) || !Character.isAlphabetic(b))
+        continue;
+      builder.append(a);
+      builder.append(b);
       list.add(builder.toString());
       builder = new StringBuilder();
     }
