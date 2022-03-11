@@ -13,3 +13,12 @@ class Solution {
     return list;
   }
 }
+
+class Counter extends HashMap<String, Integer> {
+  void count(String s) {
+    if (get(s) == null)
+      put(s, 1);
+    else
+      put(s, get(s) + 1);
+  }
+}
