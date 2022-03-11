@@ -1,8 +1,8 @@
 ## [문제명](문제URL)
 
 **통과 현황**
-- [ ] JavaScript
 - [ ] Java
+- [ ] JavaScript
 
 **분석**
 * 내용1
