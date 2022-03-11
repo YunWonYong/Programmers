@@ -21,4 +21,11 @@ class Counter extends HashMap<String, Integer> {
     else
       put(s, get(s) + 1);
   }
+
+  void intersect(Counter c) {
+    c.forEach((k, v) -> {
+      if (get(k) != null)
+        merge(k, v, Math::min);
+    });
+  }
 }
