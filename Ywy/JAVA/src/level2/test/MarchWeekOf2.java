@@ -4,11 +4,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import level2.test.cases.PairRemoveTest;
-import level2.test.cases.RotateMatrixBorderTest;
+import level2.ParenthesesConversion;
+import level2.test.cases.MenuRenewalTest;
 
 @RunWith(Suite.class)
-@SuiteClasses({ PairRemoveTest.class, RotateMatrixBorderTest.class })
+@SuiteClasses({ ParenthesesConversion.class, MenuRenewalTest.class })
 public class MarchWeekOf2 {
 
 }
