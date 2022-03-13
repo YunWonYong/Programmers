@@ -2,17 +2,11 @@ package Programmers.test;
 
 import java.util.*;
 
-public class MenuRenewal {
-    public static void main(String[] args) {
-        MenuRenewal menu = new MenuRenewal();
-        String[] orders1 = {"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
-        int[] course1 = {2, 3, 4};
-        String[] answer1 = menu.solution(orders1, course1);
-        for (String e : answer1) {
-            System.out.println("e = " + e);
-        }
-    }
+/**
+ * 메뉴 리뉴얼
+ */
 
+public class MenuRenewal {
     public String[] solution(String[] orders, int[] course) {
         List<Character> reduce = reduce(orders); // 알파벳 경우의 수 줄이기 => 2번 이상 나온 알파벳만 뽑아낸다.
 
@@ -87,6 +81,22 @@ public class MenuRenewal {
         }
         return true;
     }
+
+    // public boolean match(String s1, String s2) {
+    //     char[] s1Arr = s1.toCharArray();
+    //     Arrays.sort(s1Arr);
+    //     int pointer = 0;
+    //     int check = 0;
+    //     for (int i = 0; i < s2.length(); i++) {
+    //         for (int j = pointer; j < s1Arr.length; j++) {
+    //             if(s2.charAt(i) == s1Arr[j]) {
+    //                 pointer = j + 1;
+    //                 check++;
+    //             }
+    //         }
+    //     }
+    //     return check == s2.length();
+    // }
 
     // 조합 추출
     public Map<String, Integer> combination(Map<String, Integer> comb, List<Character> reduce, boolean[] visited, int start, int n, int r) {
