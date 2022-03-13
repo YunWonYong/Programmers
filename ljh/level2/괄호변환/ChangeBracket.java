@@ -4,17 +4,6 @@ package Programmers.test;
  * 괄호 변환 (60058)
  */
 public class ChangeBracket {
-    public static void main(String[] args) {
-        ChangeBracket lesson = new ChangeBracket();
-        String answer1 = lesson.solution("(()())()");
-        System.out.println("answer1 = " + answer1); // "(()())()"
-        String answer2 = lesson.solution(")("); // "()"
-        System.out.println("answer2 = " + answer2);
-        String answer3 = lesson.solution("()))((()"); // "()(())()"
-        System.out.println("answer3 = " + answer3);
-
-    }
-
     public String solution(String p) {
         return change(p);
     }
