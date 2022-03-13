@@ -2,20 +2,13 @@ package Programmers.test;
 
 import java.util.*;
 
+/**
+ * 메뉴 리뉴얼
+ *     개선안. orders를 한 문자로 쪼개서 Set로 만든 다음 저장하기. HashSet는 검색하는데 O(1).
+ *     ㄴ 경우의 수 줄일 때, Map 사용하기. 자동캐스팅으로 인한 작업 줄이기.
+ */
 public class MenuRenewal2 {
-    public static void main(String[] args) {
-        MenuRenewal2 menu = new MenuRenewal2();
-        String[] orders1 = {"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
-        int[] course1 = {2, 3, 4};
-        String[] answer1 = menu.solution(orders1, course1);
-        for (String e : answer1) {
-            System.out.println("e = " + e);
-        }
-    }
 
-    // 개선안 1. orders를 한 문자로 쪼개서 Set로 만든 다음 저장하기. HashSet는 검색하는데 O(1).
-    // ㄴ 경우의 수 줄일 때, Map 사용하기. 자동캐스팅으로 인한 작업 줄이기.
-    // ㄴ Map 으로 반환하는데, 조합 구하는 과정 수정?
     public String[] solution(String[] orders, int[] course) {
         Set[] setOrders = setOrders(orders);
         List<Character> reduce = reduce(setOrders); // 알파벳 숫자 세기
