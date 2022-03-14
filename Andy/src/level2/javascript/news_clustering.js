@@ -1,17 +1,9 @@
 //프로그래머스 Level 2,[1차] 뉴스 클러스터링
-
-function isAlphabet(str) {
-    let a = str.charCodeAt(0);
-    if(a>=65 && a<=90) return true;
-    return false;
-}
-
-
 function stringSplit(str) {
     let arr = [];
     [...str.toUpperCase()].reduce( function(a,d) {
-        if(isAlphabet(a) == true && isAlphabet(d) == true)
-            arr.push(a+d);
+        if(a.toLowerCase() != a && d.toLowerCase() != d)
+            arr.push(a+d);        
         return d;
     });
     return arr.sort();
@@ -22,39 +14,41 @@ function solution(str1, str2) {
     var arr1 = stringSplit(str1);
     var arr2 = stringSplit(str2);
     
-    var arrBig = [];
-    var arrSmall = [];
+    var union = 0;
+    var inter = 0;
     
-    let idx = 0;
-    arr1.forEach( (d) => {
-        if(arr2[idx] == undefined) {
-            arrBig.push(d);
-            return;
-        }
-        if(d < arr2[idx]) {
-            arrBig.push(d);
-            return;
+    let i1=0,i2=0;
+    while(true) {
+        if(arr1.length <= i1) {
+            union += arr2.slice(i2).length;
+            break;
+        }    
+        if(arr2.length <= i2) {
+            union += arr1.slice(i1).length;
+            break;
         }        
-        
-        while(d>arr2[idx]) {
-            arrBig.push(arr2[idx]);
-            idx++;
+
+        let a = arr1[i1];
+        let b = arr2[i2];
+        if(a == b) {
+            inter++; union++;
+            i1++;
+            i2++;
         }
-        if(d == arr2[idx]) {
-            arrBig.push(d);
-            arrSmall.push(d);
-            idx++;
-            return;
-        }        
-        arrBig.push(d);
-    });
-    
-    for(let i=idx;i<arr2.length;i++) arrBig.push(arr2[i]);
-    
-    if(arrSmall.length==0 && arrBig.length==0) 
+        else if(a>b) {
+            union++;
+            i2++;
+        }
+        else if(a<b) {
+            union++;
+            i1++;
+        }           
+    }
+
+    if(inter==0 && union==0) 
         answer = 1;
     else 
-        answer = arrSmall.length/arrBig.length;
+        answer = inter/union;
     
     return Math.floor(answer*65536);
 }
