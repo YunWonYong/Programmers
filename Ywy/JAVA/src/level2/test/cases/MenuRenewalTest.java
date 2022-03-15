@@ -17,17 +17,11 @@ public class MenuRenewalTest {
 	public void setUp() throws Exception {
 		orders = new String[][] {
 			{
-				"XYZ",
-				"XWY",
-				"WXA"
-			},
-			{
-				"ABCFG",
-				"AC",
-				"CDE",
-				"ACDE",
-				"BCFG",
-				"ACDEH"
+				"ACEGJL", 
+				"BCDEGJ", 
+				"CJNOP", 
+				"CDF", 
+				"ABCDF"
 			},
 			{
 				"ABCDE",
@@ -38,25 +32,63 @@ public class MenuRenewalTest {
 				"XYZ",
 				"ACD"
 			},
+
+			{
+				"XYZ",
+				"XWY",
+				"WXA"
+			},
+			{
+				"ABCDE", 
+				"AB", 
+				"CDAB", 
+				"ABDE", 
+				"XABYZ", 
+				"ABXYZ", 
+				"ABCD", 
+				"ABCDE", 
+				"ABCDE", 
+				"ABCDE", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB", 
+				"AB"
+			},
+			{
+				"ABCD", 
+				"ABCD", 
+				"ABCD"
+			}, 
+			{
+				"ABCFG",
+				"AC",
+				"CDE",
+				"ACDE",
+				"BCFG",
+				"ACDEH"
+			},
 		};
 		
 		courses = new int[][] {
+			{2, 4, 5},
+			{2, 3, 5},
+			{2, 3, 4},
+			{2},
 			{2, 3, 4},
 			{2, 3, 4},
-			{2, 3, 5}
 		};
 		
 		answers = new String[][] {
-
 			{
-				"WX",
-				"XY"
-			},
-			{
-				"AC",
-				"ACDE",
-				"BCFG",
-				"CDE"
+				"CD", 
+				"CEGJ", 
+				"CJ"
 			},
 			{
 				"ACD",
@@ -64,6 +96,32 @@ public class MenuRenewalTest {
 				"ADE",
 				"CD",
 				"XYZ"
+			},
+			{
+				"WX",
+				"XY"
+			},
+			{
+				"AB"
+			},
+			{
+				"AB", 
+				"ABC", 
+				"ABCD", 
+				"ABD", 
+				"AC", 
+				"ACD", 
+				"AD", 
+				"BC", 
+				"BCD", 
+				"BD", 
+				"CD"
+			},
+			{
+				"AC",
+				"ACDE",
+				"BCFG",
+				"CDE"
 			},
 		};
 		
