@@ -1,4 +1,4 @@
-export default class Nara1234 {
+export default class NewsClustering {
     reg = /^[a-z]{2}$/i;
     solution = (str1, str2) => {
         let A = {};
