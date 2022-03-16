@@ -19,32 +19,27 @@ function solution(str1, str2) {
     
     let i1=0,i2=0;
     while(true) {
-        if(arr1.length <= i1) {
-            union += arr2.slice(i2).length;
+        if(arr1.length <= i1 || arr2.length <= i2) {
             break;
         }    
-        if(arr2.length <= i2) {
-            union += arr1.slice(i1).length;
-            break;
-        }        
 
         let a = arr1[i1];
         let b = arr2[i2];
         if(a == b) {
-            inter++; union++;
+            inter++;
             i1++;
             i2++;
         }
         else if(a>b) {
-            union++;
             i2++;
         }
         else if(a<b) {
-            union++;
             i1++;
         }           
     }
 
+    union = arr1.length + arr2.length - inter;
+    
     if(inter==0 && union==0) 
         answer = 1;
     else 

@@ -23,16 +23,11 @@ public class news_clustering {
         List<String> list2 = new ArrayList<String>();
         stringSplit(list1,str1);
         stringSplit(list2,str2);
-          
-        int union=0,inter=0;        
+        
+        int union=0,inter=0;
         int i1=0,i2=0;
         while(true) {
-        	if(list1.size() <= i1) {
-        		union += (list2.size()-i2);
-        		break;
-        	}
-        	if(list2.size() <= i2) {
-        		union += (list1.size()-i1);
+        	if(list1.size() <= i1 || list2.size() <= i2) {
         		break;
         	}
         	
@@ -41,20 +36,19 @@ public class news_clustering {
         	
         	int compare = a.compareTo(b);
         	if(compare == 0) {
-        		union++;
         		inter++;
         		i1++;
         		i2++;
         	}
         	else if(compare>0) {
-        		union++;
         		i2++;
         	}
         	else {
-        		union++;
         		i1++;
         	}
         }
+
+        union = list1.size() + list2.size() - inter;
         
         double result=0;
         if(union==0 && inter==0)
