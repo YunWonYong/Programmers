@@ -15,6 +15,10 @@ public class MaximizeFormulasTest {
 	@Before
 	public void setUp() {
 		expressions = new String[] {
+			//"5-30-5-5+2+2",
+			"2-990-5+2",
+			"50+1-4",
+			"1-1-1-2+1+2-1-1",
 			"100-200*300-500+20",
 			"50*6-3*2",
 			"1+1+1",
@@ -22,6 +26,9 @@ public class MaximizeFormulasTest {
 			"1*1*1",
 		};
 		answers = new int[] {
+			995,
+			47,
+			8,
 			60420,
 			300,
 			3,

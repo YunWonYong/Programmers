@@ -1,6 +1,7 @@
 package level2;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
 
@@ -58,37 +59,22 @@ enum Operators {
 public class MaximizeFormulas {
 	public long solution(String expression) {
 		List<Operators> operList = new ArrayList<>();
+		
 		for (Operators operator: Operators.values()) {
 			if (expression.indexOf(operator.getOperator()) == -1) {
 				continue;
 			}
 			operList.add(operator);
 		}
-		if (operList.size() == 1) {
-			return singleOperCalc(expression, operList.get(0));
-		}
-		return multiOperCalc(operList, expression);
-	}
-	
-	private long singleOperCalc(String expression, Operators operator) {
-		String[] digits = expression.split(operator.getSlitCharator());
-		int index = 0;
-		int range = digits.length;
-		Long answer = Long.parseLong(digits[index++]);
-		do {
-			answer = operator.calc(answer, digits[index]);
-		} while(++index < range);
-		return abs(answer);
-	}
-	
-	private long multiOperCalc(List<Operators> operList, String expression) {
-		Long answer = 0L;
-		Long temp = 0L;
+		
 		String[][] patterns = getPatterns(operList);
 		int index = 0;
 		int range = patterns.length;
+		long answer = 0L;
+		long temp = 0L;
+		
 		do {
-			temp = calc(patterns[index], expression); 
+			temp = calc(expression, patterns[index]);
 			if (answer < temp) {
 				answer = temp;
 			}
@@ -103,12 +89,18 @@ public class MaximizeFormulas {
 		
 		operList.forEach(oper -> opers.add(oper.getOperator()));
 		int size = range * (range - 1);
-		
+		if (size == 0) {
+			size++;
+		}
 		String[][] patterns = new String[size][range];
 		int pointer = 0;
 		String[] pattern = new String[range];
 		while(pointer < range) {
 			pattern[pointer] = opers.get(pointer++);
+		}
+		if (size == 1) {
+			patterns[0] = pattern;
+			return patterns;
 		}
 		pointer = 0;
 		int index = 1;
@@ -130,74 +122,49 @@ public class MaximizeFormulas {
 		}
 	}
 	
-	private Long calc(String[] patterns, String expression) {
+	private long calc(String expression, String[] operations) {
 		int index = 0;
-		int range = patterns.length;
-		String temp = null;
-		String[] arr = null;
-		Operators op = null;
-		String operator = null;
-		String splitAt = null;
-		int min = 0;
+		int range = operations.length;
+		String operation = null;
+		Operators operator = null;
+		List<String> numbers = new LinkedList<>();
+		List<String> opers = new LinkedList<>();
+		set(numbers, expression, "[^0-9]");
+		set(opers, expression.replaceAll("[0-9]", ""), "");
+		int index2 = 0;
+		int range2 = opers.size();
 		do {
-			operator = patterns[index];
-			op = Operators.getOperator(operator);
-			splitAt = op.getSlitCharator();
-			while((min = expression.indexOf(operator)) > -1) {
-				if (min == 0) {
-					min = expression.substring(1, expression.length()).indexOf(operator) + 1;
-					if (min == 0) {
-						break;
-					}
+			operation = operations[index];
+			operator = Operators.getOperator(operation);
+			while (index2 < range2) {
+				if (operation.equals(opers.get(index2))) {
+					numbers.set(index2, String.valueOf(operator.calc(numbers.get(index2), numbers.get(index2 + 1))));
+					numbers.remove(index2 + 1);
+					opers.remove(index2);
+					range2--;
+					continue;
 				}
-				temp = search(expression, min, operator);
-				if (operator.equals("-") && temp.indexOf("-") == 0 && temp.indexOf("*") == - 1 && temp.indexOf("+") == -1) {
-					arr = temp.substring(1, temp.length()).split(splitAt);
-					arr[0] = "-" + arr[0];
-				} else {
-					arr = temp.split(splitAt);
-				}
-				
-				if (arr[0].isEmpty() || arr[1].isEmpty() || arr.length != 2) {
-					break;
-				}
-				expression = expression.replace(temp, String.valueOf(op.calc(arr[0], arr[1])));
+				index2++;
 			}
+			if (range2 == 0) {
+				break;
+			}
+			index2 = 0;
 		} while(++index < range);
-		return abs(Long.parseLong(expression));
-	}
-
-	private String search(String expression, int min, String operator) {
-		StringBuffer sb = new StringBuffer();
-		int temp = min - 1;
-		if (expression.charAt(temp) < 48) {
-			temp--;
-		}
-		int range = expression.length();
-		boolean flag = true;
-		char at = 0_0;
-		while(true) {
-			at = expression.charAt(temp);
-
-			if ((flag && at < 48) || temp == 0) {
-				sb.append(expression.substring(temp == 0 ? 0 : temp + 1, min)).append(operator);
-				temp = min + 1;
-				if (expression.charAt(temp) < 48) {
-					temp++;
-				}
-				flag = false;
-				continue;
-			}
-			temp += flag ? -1 : 1; 
-			if ((!flag && at < 48) || temp == range) {
-				sb.append(expression.substring(min + 1, temp == range ? temp : temp - 1));
-				return sb.toString().replaceAll("#", operator);
-			}
-			
-		}
+		return abs(Long.parseLong(numbers.get(0)));
 	}
 	
 	
+	private void set(List<String> list, String expression, String reg) {
+		String[] arr = expression.split(reg);
+		int index = 0;
+		int range = arr.length;
+		do {
+			list.add(arr[index]);
+		} while(++index < range);
+		
+	}
+
 	private long abs(Long num) {
 		return num < 0 ? ~num + 1: num;
 	}
