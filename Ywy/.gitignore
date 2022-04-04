@@ -14,9 +14,9 @@ JavaScript/coverage/
 
 JavaScript/node_modules/
 
-JavaScript/babel.config.json
+JavaScript/babel.config.*
 
-JavaScript/jest.config.json
+JavaScript/jest.config.*
 
 JavaScript/package.json
 
