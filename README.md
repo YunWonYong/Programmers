@@ -109,12 +109,14 @@
         <a href="https://github.com/YunWonYong/Programmers/tree/suhyun" title="suhyun branch">suhyun</a>
       </td>
       <td align="center">
-        2021-12-12
+        2021-12-12 <br>
+        ~ <br>
+        2022-03-25
       </td>
       <td>
         :one:🏃
         <br>
-        2️⃣🏃
+        2️⃣:scream:
       </td>
       <td>
         <a href="https://docs.oracle.com/javase/8/docs/api/" title="Java8 api" target="_blank">
