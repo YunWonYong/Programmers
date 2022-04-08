@@ -8,7 +8,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses(
 	{ 
 		FebruaryWeekOf2.class,	FebruaryWeekOf3.class,	FebruaryWeekOf4.class,
-		MarchWeekOf1.class,		MarchWeekOf2.class,		MarchWeekOf3.class	
+		MarchWeekOf1.class,		MarchWeekOf2.class,		MarchWeekOf3.class,		MarchWeekOf4.class
 	}
 )
 public class AllTests {}
