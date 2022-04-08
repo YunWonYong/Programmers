@@ -25,7 +25,7 @@ function solution(grid) {
             else if(this.stype === "L") {
                 return arrowOutL[arrow];
             }           
-        }        
+        }   
     }
     
     arr = [];
@@ -47,14 +47,13 @@ function solution(grid) {
             arr[row][col].outArr[arrow] = cnt;
             cnt++;
             
-            if(arrow == LEFT) col = col - 1;  if(col<0) col=arr[row].length-1;            
+            if(arrow == LEFT) col = (col-1)>=0?col-1:arr[row].length-1;            
             if(arrow == RIGHT) col = (col + 1) % arr[row].length;
-            if(arrow == UP) row--; if(row<0) row = arr.length-1;
+            if(arrow == UP) row = (row-1)>=0?row-1:arr.length-1;
             if(arrow == DOWN) row = (row + 1) % arr.length;
             
+            // 반전시킨다.
             arrow = (arrow+1)%2 + (arrow/2>>0)*2;
-            
-            if(arr[row][col].inArr[arrow] > 0) return -1;
             
             arr[row][col].inArr[arrow] = cnt;
                   
