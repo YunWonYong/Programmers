@@ -30,13 +30,12 @@ public class lightpath {
     public Grid[][] arr;
     
     public int trace(int x,int y,int aw) {
-		if(arr[x][y].inArr[aw] > 0) {
+    	if(arr[x][y].inArr[aw] > 0) {
             return -1;
         }
         
 		int row=x, col=y, arrow = aw;
-		int cnt = 1;
-		
+		int cnt = 1;		
 		for(;;) {
 			arrow = arr[row][col].getInput(arrow);
 			arr[row][col].outArr[arrow] = cnt;
@@ -47,7 +46,7 @@ public class lightpath {
             if(arrow == Grid.UP) row--; if(row<0) row = arr.length-1;
             if(arrow == Grid.DOWN) row = (row + 1) % arr.length;
 
-            arrow = (arrow+1)%2 + (arrow/2>>0)*2;
+            arrow = (arrow+1)%2 + (arrow/2)*2;
 
             arr[row][col].inArr[arrow] = cnt;
                   
