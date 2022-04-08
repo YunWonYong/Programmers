@@ -28,7 +28,7 @@ class Grid {
 
 public class lightpath {
     public Grid[][] arr;
-
+    
     public int trace(int x,int y,int aw) {
 		if(arr[x][y].inArr[aw] > 0) {
             return -1;
@@ -48,11 +48,7 @@ public class lightpath {
             if(arrow == Grid.DOWN) row = (row + 1) % arr.length;
 
             arrow = (arrow+1)%2 + (arrow/2>>0)*2;
-            
-            if(arr[row][col].inArr[arrow] > 0) {
-                return -1;
-            }
-            
+
             arr[row][col].inArr[arrow] = cnt;
                   
             if(row == x && col == y && aw == arrow) {                
@@ -90,5 +86,5 @@ public class lightpath {
         list.sort(null);    
         answer = list.stream().mapToInt(Integer::intValue).toArray();
         return answer;
-    }    
+    } 
 }
