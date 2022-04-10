@@ -165,15 +165,6 @@ class Port {
   }
 
   cycle() {
-    if (this.src) {
-      this.cell.grid.cycles.push(this.cell.grid.lenCycle)
-      this.cell.grid.lenCycle = 0
-      return
-    }
-    this.shoot().curve().cycle()
-  }
-
-  cycle() {
     if (!this.src) {
       let port = this
       while (true) {
