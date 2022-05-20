@@ -2,64 +2,34 @@ import java.util.*;
 
 public class Main {
   public static void main(String[] args) {
+
+    int RED   = 0;
+    int GREEN = 1;
+    int BLUE  = 2;
+
     Scanner sc = new Scanner(System.in);
+
     int n = sc.nextInt();
-    Paint[] dp = new Paint[n];
-    Paint[][] paints = new Paint[n][3];
-    for (int i = 0; i < n; i++)
-      paints[i] = new Paint[] { new Paint("Red",   sc.nextInt())
-                              , new Paint("Green", sc.nextInt())
-                              , new Paint("Blue",  sc.nextInt()) };
-    dp[0] = minimum(paints[0]);
-    for (int i = 1; i < n; i++)
-      dp[i] = minimum(filter(dp[i-1], paints[i]));
+    int[][] sum = new int[n+1][3];
+    sum[0] = new int[] {0, 0, 0};
 
-    System.out.println(sum(dp));
+    for (int i = 1; i <= n; i++) {
+      int r = sc.nextInt();
+      int g = sc.nextInt();
+      int b = sc.nextInt();
+      sum[i] = new int[] { r + Math.min(sum[i-1][GREEN], sum[i-1][BLUE])
+                         , g + Math.min(sum[i-1][RED],   sum[i-1][BLUE])
+                         , b + Math.min(sum[i-1][RED],   sum[i-1][GREEN]) };
+    }
+
+    System.out.println(minimum(sum[n]));
   }
 
-  static Paint minimum(Paint[] paints) {
-    Paint min = paints[0];
-    for (int i = 1; i < paints.length; i++)
-      if (paints[i].getCost() < min.getCost())
-        min = paints[i];
+  static int minimum(int[] xs) {
+    int min = xs[0];
+    for (int i = 1; i < xs.length; i++)
+      if (xs[i] < min)
+        min = xs[i];
     return min;
-  }
-
-  static Paint[] filter(Paint paint, Paint[] paints) {
-    Paint[] newPaints = new Paint[2];
-    int j = 0;
-    for (int i = 0; i < paints.length; i++)
-      if (paint.getColor() != paints[i].getColor())
-        newPaints[j++] = paints[i];
-    return newPaints;
-  }
-
-  static int sum(Paint[] paints) {
-    int s = 0;
-    for (int i = 0; i < paints.length; i++)
-      s += paints[i].getCost();
-    return s;
-  }
-}
-
-class Paint {
-  private String color;
-  private int cost;
-
-  public Paint(String color, int cost) {
-    this.color = color;
-    this.cost = cost;
-  }
-
-  public int getCost() {
-    return cost;
-  }
-
-  public String getColor() {
-    return color;
-  }
-
-  public String toString() {
-    return color + " " + cost;
   }
 }
