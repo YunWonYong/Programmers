@@ -19,7 +19,7 @@ arr[6] = [ [[0,0],[1,1],[1,0],[-1,0]] , [[0,0],[-1,1],[0,1],[0,-1]],[[0,0],[-1,-
 arr[7] = [ [[0,0],[-1,1],[1,0],[-1,0]],[[0,0],[-1,-1],[0,1],[0,-1]],[[0,0],[1,-1],[-1,0],[1,0]],[[0,0],[1,1],[0,-1],[0,1]] ];
 
 let board = [];
-for(let i=0;i<10;i++) {
+for(let i=0;i<150;i++) {
 	let tmp = [];
 	for(let j=0;j<cboard.length;j++) {
 		if(cboard[j] > i) tmp[j] = 1;
@@ -63,10 +63,8 @@ function getx(bx, tmparr) {
 	let maxy = -1;
 	for(let i=0;i<tmparr.length;i++) {
 		let node = tmparr[i];
-		//console.log(node);
 		let x = bx + node[0];
 		let y = getminy(x) - node[1];
-		//console.log(x + ":" + y);
 		if(maxy < y) maxy = y;
 	}
 	return maxy;
@@ -75,7 +73,6 @@ function getx(bx, tmparr) {
 let cnt = 0;
 let barr = arr[p];
 for(let i=0;i<barr.length;i++) {
-	// console.log(barr[i]);
 	for(j=0;j<cboard.length;j++) {
 		let x = getx(j,barr[i]);
 		if(x>=0) {
