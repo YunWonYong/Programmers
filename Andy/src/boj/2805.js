@@ -27,7 +27,6 @@ treeidx.some( (d) => cal(d));
 
 function cal(d) {
 	let len = treecnt * (prevd-d); // 현재단계의 나무합 	
-	let tt = len2 + len;
 	if(m <= len2 + len) {
 		let max = prevd;
 		let min = d;
