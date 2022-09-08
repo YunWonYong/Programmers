@@ -41,8 +41,8 @@ median = arr3.length==1?arr3[0]:arr3[1];
 let scope = arr2[arr2.length-1] - arr2[0];
 
 // 평균 : mean
-// 최빈값 : mode
-// 중앙값 : median 
+// 중앙값 : mode
+// 최빈값 : median 
 // 범위 : scope
 console.log(mean);
 console.log(mode);
